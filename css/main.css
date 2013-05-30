@@ -1,0 +1,933 @@
+/* Global Reset
+------------------------------------------------------------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Clear Floated Elements
+------------------------------------------------------------------------------*/
+.clearfix:after, .sample#postnormal .text:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+body {
+  background: #c8c8c8;
+  font-family: "helvetica neue", helvetica, arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.comment {
+  width: 600px;
+  height: 100px;
+  margin: auto;
+  background-color: #fff;
+  color: #222;
+  border: 4px solid #ccc;
+  -moz-box-shadow: 0px 0px 40px 1px #680100;
+  -webkit-box-shadow: 0px 0px 40px 1px #680100;
+  -o-box-shadow: 0px 0px 40px 1px #680100;
+  box-shadow: 0px 0px 40px 1px #680100;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#680100, Direction=NaN, Strength=40);
+  margin-bottom: 40px;
+}
+
+/* Personal Elements
+------------------------------------------------------------------------------*/
+
+/*Josefin Sans: 300,400,600,700*/
+
+#typo-1 {
+  background-color: #960018;
+  color: #fff;
+/*  border-top: 4px solid #eee;*/
+  border-bottom: 4px solid #eee;
+  padding: 60px 0 60px;
+}
+
+#typo-1 .container {
+  width: 800px;
+  margin: auto;
+}
+
+#typo-1 div.title {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 80px;
+}
+
+#typo-1 h1,
+#typo-1 h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
+#typo-1 h1 {
+  font-weight: 400;
+  font-size: 7.8em;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+#typo-1 h2 {
+  font-weight: 400;
+  font-size: 5em;
+  line-height: 1.3;
+/*  text-transform: uppercase;*/
+}
+
+#typo-1 .menu {
+  padding: 80px 0 0;
+  text-align: center;
+}
+
+#typo-1 h3.title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+#typo-1 ul.food {
+  padding: 40px 0 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.4em;  
+}
+
+#typo-1 ul li {
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------------------------------*/
+
+/*Lato: 300,400,700*/
+
+#typo-2 {
+  background-color: #960018;
+  color: #fff;
+  border-top: 4px solid #eee;
+  border-bottom: 4px solid #eee;
+  padding: 60px 0 60px;
+}
+
+#typo-2 .container {
+  width: 910px;
+  margin: auto;
+}
+
+#typo-2 div.title {
+  border-bottom: 1px solid #eee;
+  padding: 40px 0 80px;
+}
+
+#typo-2 h1,
+#typo-2 h2 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+#typo-2 h1 {
+  font-weight: 700;
+  font-size: 6em;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+#typo-2 h2 {
+  font-weight: 400;
+  font-size: 4em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+#typo-2 .menu {
+  padding: 80px 0 0;
+  text-align: center;
+}
+
+#typo-2 h3.title {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 1.6em;
+  text-transform: uppercase;
+}
+
+#typo-2 ul.food {
+  padding: 40px 0 40px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.4em;  
+}
+
+#typo-2 ul li {
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------------------------------*/
+
+/*Tangerine:400,700*/
+
+#typo-3 {
+  background-color: #960018;
+  color: #fff;
+  border-top: 4px solid #eee;
+  border-bottom: 4px solid #eee;
+  padding: 60px 0 60px;
+}
+
+#typo-3 .container {
+  width: 800px;
+  margin: auto;
+}
+
+#typo-3 div.title {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 80px;
+}
+
+#typo-3 h1,
+#typo-3 h2 {
+  font-family: 'Tangerine', cursive;
+  text-align: center;
+}
+
+#typo-3 h1 {
+  font-weight: 700;
+  font-size: 11em;
+  line-height: 1.6;
+  margin-bottom: 0px;
+}
+
+#typo-3 h2 {
+  font-weight: 700;
+  font-size: 6em;
+  line-height: 1.2;
+/*  text-transform: uppercase;*/
+}
+
+#typo-3 .menu {
+  padding: 80px 0 0;
+  text-align: center;
+}
+
+#typo-3 h3.title {
+  font-family: 'Tangerine', cursive;
+  font-weight: 700;
+  font-size: 3.2em;
+}
+
+#typo-3 ul.food {
+  padding: 20px 0 40px;
+  font-family: 'Tangerine', cursive;
+  font-weight: 700;
+  font-size: 2.4em;
+}
+
+#typo-3 ul li {
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------------------------------*/
+
+/* Josefin Slab:300,400,600,700 */
+
+#typo-4 {
+  background-color: #960018;
+  color: #fff;
+  border-top: 4px solid #eee;
+  border-bottom: 4px solid #eee;
+  padding: 60px 0 60px;
+}
+
+#typo-4 .container {
+  width: 910px;
+  margin: auto;
+}
+
+#typo-4 div.title {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 60px;
+}
+
+#typo-4 h1,
+#typo-4 h2 {
+  font-family: 'Josefin Slab', sans-serif;
+  text-align: center;
+}
+
+#typo-4 h1 {
+  font-weight: 300;
+  font-size: 8.4em;
+  line-height: 1.6;
+  margin-bottom: 0px;
+}
+
+#typo-4 h2 {
+  font-weight: 700;
+  font-size: 3.2em;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+#typo-4 .menu {
+  padding: 60px 0 0;
+  text-align: center;
+}
+
+#typo-4 h3.title {
+  font-family: 'Josefin Slab', sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+#typo-4 ul.food {
+  padding: 30px 0 40px;
+  font-family: 'Josefin Slab', sans-serif;
+  font-weight: 400;
+  font-size: 1.6em;
+}
+
+#typo-4 ul li {
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------------------------------*/
+
+/* Merriweather Sans:300,400,600 */
+
+#typo-5 {
+  background-color: #960018;
+  color: #fff;
+  border-top: 4px solid #eee;
+  border-bottom: 4px solid #eee;
+  padding: 60px 0 60px;
+}
+
+#typo-5 .container {
+  width: 910px;
+  margin: auto;
+}
+
+#typo-5 div.title {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 40px;
+}
+
+#typo-5 h1,
+#typo-5 h2 {
+  font-family: 'Merriweather Sans', cursive;
+  text-align: center;
+}
+
+#typo-5 h1 {
+  font-weight: 600;
+  font-size: 6.4em;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+#typo-5 h2 {
+  font-weight: 300;
+  font-size: 3.4em;
+  line-height: 1.4;
+/*  text-transform: uppercase;*/
+}
+
+#typo-5 .menu {
+  padding: 60px 0 0;
+  text-align: center;
+}
+
+#typo-5 h3.title {
+  font-family: 'Merriweather Sans', cursive;
+  font-weight: 300;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+#typo-5 ul.food {
+  padding: 20px 0 30px;
+  font-family: 'Merriweather Sans', cursive;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+#typo-5 ul li {
+  line-height: 1.8;
+}
+
+/* ---------------------------------------------------------------------------*/
+
+/* Cookie:400,600 */
+
+#typo-6 {
+  background-color: #960018;
+  color: #fff;
+  border-top: 4px solid #eee;
+  border-bottom: 4px solid #eee;
+  padding: 60px 0 60px;
+}
+
+#typo-6 .container {
+  width: 910px;
+  margin: auto;
+}
+
+#typo-6 div.title {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 80px;
+}
+
+#typo-6 h1,
+#typo-6 h2 {
+  font-family: 'Cookie', cursive;
+  text-align: center;
+}
+
+#typo-6 h1 {
+  font-weight: 400;
+  font-size: 10em;
+  line-height: 1.4;
+  margin-bottom: 0px;
+}
+
+#typo-6 h2 {
+  font-weight: 400;
+  font-size: 6em;
+  line-height: 1.2;
+/*  text-transform: uppercase;*/
+}
+
+#typo-6 .menu {
+  padding: 80px 0 0;
+  text-align: center;
+}
+
+#typo-6 h3.title {
+  font-family: 'Cookie', cursive;
+  font-weight: 400;
+  font-size: 3.2em;
+}
+
+#typo-6 ul.food {
+  padding: 20px 0 40px;
+  font-family: 'Cookie', cursive;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+#typo-6 ul li {
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------------------------------*/
+
+/* Sue Ellen Francisco:400,600  */
+
+#typo-7 {
+  background-color: #960018;
+  color: #fff;
+  border-top: 4px solid #eee;
+  border-bottom: 4px solid #eee;
+  padding: 60px 0 60px;
+}
+
+#typo-7 .container {
+  width: 910px;
+  margin: auto;
+}
+
+#typo-7 div.title {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 40px;
+}
+
+#typo-7 h1,
+#typo-7 h2 {
+  font-family: 'Sue Ellen Francisco', cursive;
+  text-align: center;
+}
+
+#typo-7 h1 {
+  font-weight: 600;
+  font-size: 6em;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+#typo-7 h2 {
+  font-weight: 400;
+  font-size: 5em;
+  line-height: 1.2;
+/*  text-transform: uppercase;*/
+}
+
+#typo-7 .menu {
+  padding: 60px 0 0;
+  text-align: center;
+}
+
+#typo-7 h3.title {
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-weight: 400;
+  font-size: 2.6em;
+}
+
+#typo-7 ul.food {
+  padding: 30px 0 60px;
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-weight: 400;
+  font-size: 1.8em;
+}
+
+#typo-7 ul li {
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------------------------------*/
+
+/* Handlee:400, */
+
+#typo-8 {
+  background-color: #960018;
+  color: #fff;
+  border-top: 4px solid #eee;
+  border-bottom: 4px solid #eee;
+  padding: 60px 0 60px;
+}
+
+#typo-8 .container {
+  width: 910px;
+  margin: auto;
+}
+
+#typo-8 div.title {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 40px;
+}
+
+#typo-8 h1,
+#typo-8 h2 {
+  font-family: 'Handlee', cursive;
+  text-align: center;
+}
+
+#typo-8 h1 {
+  font-weight: 600;
+  font-size: 8em;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+
+#typo-8 h2 {
+  font-weight: 400;
+  font-size: 4.2em;
+  line-height: 1.2;
+/*  text-transform: uppercase;*/
+}
+
+#typo-8 .menu {
+  padding: 60px 0 0;
+  text-align: center;
+}
+
+#typo-8 h3.title {
+  font-family: 'Handlee', cursive;
+  font-weight: 600;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+#typo-8 ul.food {
+  padding: 20px 0 40px;
+  font-family: 'Handlee', cursive;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+#typo-8 ul li {
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------------------------------*/
+
+/* Permanent Marker:400  */
+
+#typo-9 {
+  background-color: #960018;
+  color: #fff;
+  border-top: 4px solid #eee;
+  border-bottom: 4px solid #eee;
+  padding: 60px 0 60px;
+}
+
+#typo-9 .container {
+  width: 910px;
+  margin: auto;
+}
+
+#typo-9 div.title {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 40px;
+}
+
+#typo-9 h1,
+#typo-9 h2 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+#typo-9 h1 {
+  font-weight: 400;
+  font-size: 6em;
+  line-height: 1.4;
+  margin-bottom: 60px;
+}
+
+#typo-9 h2 {
+  font-weight: 400;
+  font-size: 4em;
+  line-height: 1.2;
+/*  text-transform: uppercase;*/
+}
+
+#typo-9 .menu {
+  padding: 60px 0 0;
+  text-align: center;
+}
+
+#typo-9 h3.title {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+#typo-9 ul.food {
+  padding: 20px 0 40px;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+
+#typo-9 ul li {
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------------------------------*/
+
+/* Niconne:  */
+
+#typo-10 {
+  background-color: #960018;
+  color: #fff;
+  border-top: 4px solid #eee;
+  border-bottom: 4px solid #eee;
+  padding: 60px 0 60px;
+}
+
+#typo-10 .container {
+  width: 910px;
+  margin: auto;
+}
+
+#typo-10 div.title {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 40px;
+}
+
+#typo-10 h1,
+#typo-10 h2 {
+  font-family: 'Niconne', cursive;
+  text-align: center;
+}
+
+#typo-10 h1 {
+  font-weight: 400;
+  font-size: 9em;
+  line-height: 1.4;
+  margin-bottom: 40px;
+}
+
+#typo-10 h2 {
+  font-weight: 400;
+  font-size: 4.8em;
+  line-height: 1.2;
+/*  text-transform: uppercase;*/
+}
+
+#typo-10 .menu {
+  padding: 60px 0 0;
+  text-align: center;
+}
+
+#typo-10 h3.title {
+  font-family: 'Niconne', cursive;
+  font-weight: 400;
+  font-size: 2.6em;
+}
+
+#typo-10 ul.food {
+  padding: 20px 0 40px;
+  font-family: 'Niconne', cursive;
+  font-weight: 400;
+  font-size: 1.8em;
+}
+
+#typo-10 ul li {
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------------------------------*/
+
+/* Satisfy */
+
+#typo-11 {
+  background-color: #960018;
+  color: #fff;
+  border-top: 4px solid #eee;
+  border-bottom: 4px solid #eee;
+  padding: 60px 0 60px;
+}
+
+#typo-11 .container {
+  width: 910px;
+  margin: auto;
+}
+
+#typo-11 div.title {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 40px;
+}
+
+#typo-11 h1,
+#typo-11 h2 {
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+}
+
+#typo-11 h1 {
+  font-weight: 400;
+  font-size: 8em;
+  line-height: 1.4;
+  margin-bottom: 60px;
+}
+
+#typo-11 h2 {
+  font-weight: 400;
+  font-size: 4.4em;
+  line-height: 1.2;
+/*  text-transform: uppercase;*/
+}
+
+#typo-11 .menu {
+  padding: 60px 0 0;
+  text-align: center;
+}
+
+#typo-11 h3.title {
+  font-family: 'Satisfy', cursive;
+  font-weight: 600;
+  font-size: 2.6em;
+}
+
+#typo-11 ul.food {
+  padding: 20px 0 40px;
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
+  font-size: 1.6em;
+}
+
+#typo-11 ul li {
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------------------------------*/
+
+/*Amatic SC':; 400,700*/
+
+#typo-12 {
+  background-color: #960018;
+  color: #fff;
+  border-top: 4px solid #eee;
+  border-bottom: 4px solid #eee;
+  padding: 60px 0 60px;
+}
+
+#typo-12 .container {
+  width: 910px;
+  margin: auto;
+}
+
+#typo-12 div.title {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 40px;
+}
+
+#typo-12 h1,
+#typo-12 h2 {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+}
+
+#typo-12 h1 {
+  font-weight: 700;
+  font-size: 10em;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+#typo-12 h2 {
+  font-weight: 400;
+  font-size: 5em;
+  line-height: 1;
+/*  text-transform: uppercase;*/
+}
+
+#typo-12 .menu {
+  padding: 60px 0 0;
+  text-align: center;
+}
+
+#typo-12 h3.title {
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
+  font-size: 3em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#typo-12 ul.food {
+  padding: 20px 0 20px;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+#typo-12 ul li {
+  line-height: 1;
+}
+
+/* ---------------------------------------------------------------------------*/
+
+/* Arial */
+
+#typo-13 {
+  background-color: #960018;
+  color: #fff;
+  border-top: 4px solid #eee;
+  border-bottom: 4px solid #eee;
+  padding: 60px 0 60px;
+}
+
+#typo-13 .container {
+  width: 910px;
+  margin: auto;
+}
+
+#typo-13 div.title {
+  border-bottom: 1px solid #eee;
+  padding: 0 0 80px;
+}
+
+#typo-13 h1,
+#typo-13 h2 {
+  font-family: 'Arial', cursive;
+  text-align: center;
+}
+
+#typo-13 h1 {
+  font-weight: 400;
+  font-size: 6em;
+  line-height: 1.4;
+  margin-bottom: 0px;
+}
+
+#typo-13 h2 {
+  font-weight: 400;
+  font-size: 6em;
+  line-height: 1.2;
+/*  text-transform: uppercase;*/
+}
+
+#typo-13 .menu {
+  padding: 80px 0 0;
+  text-align: center;
+}
+
+#typo-13 h3.title {
+  font-family: 'Arial', cursive;
+  font-weight: 400;
+  font-size: 3.2em;
+}
+
+#typo-13 ul.food {
+  padding: 20px 0 40px;
+  font-family: 'Arial', cursive;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+#typo-13 ul li {
+  line-height: 1.4;
+}
+
+/* ---------------------------------------------------------------------------*/
