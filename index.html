@@ -14,14 +14,10 @@
   <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap-responsive.css">
   <link rel="stylesheet" type="text/css" href="css/animations.css">
-   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
-   <!--[if lte IE 8]>
-       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
-   <![endif]-->
+  <link rel="stylesheet" href="css/main.css">
 
   <script src="js/modernizr.custom.js"></script>
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
@@ -40,12 +36,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="#">Pierrot Gourmet</a>
+        <a class="logo visible-phone" href="#">Pierrot Gourmet</a>
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <li><a href="#carte">Menu du marché</a></li>
-            <li><a href="#events">évènements</a></li>
-            <li><a href="#contact">Contact et Réservation</a></li>
+            <li><a href="#carte">Notre cuisine</a></li>
+            <li><a href="#carte">Menus du marché</a></li>
+            <li><a class="logo" href="#">Pierrot Gourmet</a></li>
+            <li><a href="#events">Nos évènements</a></li>
+            <li><a href="#contact">Nous contacter</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -136,11 +134,11 @@
       <div class="row-fluid">
         <div class="span12">
           <div id="expos" class="span4">
-            <div class="big-icon"></div>
+            <div class="big-icon img-circle"></div>
             <h2><span>L'expo du moment</span></h2>
             <h3><span>Dali et les trompettistes</span></h3>
             <h3><span>Du 30 mai au 30 juin 2013</span></h3>
-            <div id="slides-expo">
+            <div id="slides-expo" class="img-polaroid">
               <img src="http://lorempixel.com/600/300/nightlife/3" alt="">
               <img src="http://lorempixel.com/600/300/nightlife/2" alt="">
               <img src="http://lorempixel.com/600/300/nightlife/6" alt="">
@@ -151,18 +149,18 @@
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           </div>
           <div id="concerts" class="span8">
-            <div class="big-icon"></div>
+            <div class="big-icon img-circle img-circle"></div>
             <h2><span>Nos prochains RDV</span></h2>
             <div class="span5">
               <h3><span>Malted Milk en concert</span></h3>
               <h3><span>Vendredi 30 mai 2013</span></h3>
-              <img src="http://lorempixel.com/600/300/nightlife/2" alt="">
+              <img src="http://lorempixel.com/600/300/nightlife/2" alt="" class="img-polaroid">
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             </div>
             <div class="span5 offset1">
               <h3><span>David Guetta DJ Set</span></h3>
               <h3><span>Vendredi 30 mai 2013</span></h3>
-              <img src="http://lorempixel.com/600/300/nightlife/5" alt="">
+              <img src="http://lorempixel.com/600/300/nightlife/5" alt="" class="img-polaroid">
               <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
             </div>
           </div>
@@ -176,7 +174,7 @@
       <div class="row-fluid">
         <div class="span12">
           <div class="span5 offset1">
-            <div class="big-icon"></div>
+            <div class="big-icon img-circle"></div>
             <h2><span>Infos pratiques</span></h2>
             <ul class="infos">
               <li>Restaurant Pierrot Gourmet</li>
@@ -189,9 +187,9 @@
             </ul>
           </div>
           <div class="span5">
-            <div class="big-icon"></div>
+            <div class="big-icon img-circle"></div>
             <h2><span>Nous rejoindre</span></h2>
-            <div class="map">
+            <div class="map img-polaroid">
               <div id="big-map" class="gmap-big"></div>
             </div>
           </div>
