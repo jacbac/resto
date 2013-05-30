@@ -12,19 +12,20 @@
   <meta name="viewport" content="width=device-width">
 
   <link href='http://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Loved+by+the+King' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap-responsive.css">
   <link rel="stylesheet" type="text/css" href="css/animations.css">
+   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+   <!--[if lte IE 8]>
+       <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.ie.css" />
+   <![endif]-->
 
   <script src="js/modernizr.custom.js"></script>
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
 </head>
 <body>
   <!--[if lt IE 8]>
@@ -51,13 +52,15 @@
     </div>
   </header>
 
-  <div id="content" class="container">
+  <div id="content">
 
     <section id="intro" class="text">
-      <div class="title">
+      <div class="title container">
         <h1>Pierrot Gourmet</h1>
-        <h1><span>Restaurant</span></h1>
-        <h1><span>Cuisine du marché</span></h1>
+        <div class="subtitle">
+          <p>Restaurant</p>
+          <p>Cuisine du marché</p>
+        </div>
       </div>
       <div id="slides-big">
         <img src="http://lorempixel.com/600/300/food/1" alt="">
@@ -71,109 +74,58 @@
 
     <hr class="visible-phone"/>
 
-    <section id="carte2">
+    <section id="ardoise">
       <div class="row-fluid">
         <div class="span12">
-          <div id="dl-menu" class="pt-triggers">
-            <button id="iterateEffects" class="pt-touch-button">Carte des vins</button>
-            <button id="iterateEffects" class="pt-touch-button">Carte des menus</button>
-          </div><!-- /triggers -->
-
           <div id="pt-main" class="pt-perspective">
             <div class="pt-page pt-page-1">
-              <h2><span>Le menu du moment</span></h2>
-              <h3 class="food-title">Entrées</h3>
-              <ul class="food">
-                <li>Tartare de Boeuf, inspiration asiatique</li>
-                <li>Carpaccio de St-Jacques de Saint-Brieux au combava</li>
-              </ul>
-              <h3 class="food-title">Plats</h3>
-              <ul class="food">
-                <li>Dos de Cabillaud de la Turballe en croute de chorizo</li>
-                <li>Quasi de veau basse température, émulsion de Machecoul</li>
-              </ul>
-              <h3 class="food-title">Desserts</h3>
-              <ul class="food">
-                <li>Burger à la fraise de Pornic, cheese de mangue et steak choco</li>
-                <li>Pierre et le LU</li>
-              </ul>
+              <div class="carte">
+                <h3>Entrées</h3>
+                <ul>
+                  <li>Tartare de Boeuf, inspiration asiatique</li>
+                  <li>Carpaccio de St-Jacques de Saint-Brieux au combava</li>
+                </ul>
+                <h3>Plats</h3>
+                <ul>
+                  <li>Dos de Cabillaud de la Turballe en croute de chorizo</li>
+                  <li>Quasi de veau basse température, émulsion de Machecoul</li>
+                </ul>
+                <h3>Desserts</h3>
+                <ul>
+                  <li>Burger à la fraise de Pornic, cheese de mangue et steak choco</li>
+                  <li>Pierre et le LU</li>
+                </ul>        
+              </div>
             </div>
             <div class="pt-page pt-page-2">
-              <h2><span>La carte des vins</span></h2>
-              <h3 class="food-title">Blancs</h3>
-              <ul class="wine">
-                <li>Gewurtzraminer - Ziegler <span class="millesime">2009</span></li>
-                <li>Reuilly - Sorbe <span class="millesime">2010</span></li>
-                <li>St-Joseph - Chapoutier <span class="millesime">2008</span></li>
-                <li>Aubance - Montgillet <span class="millesime">2008</span></li>
-                <li>Loupiac - Kressmann <span class="millesime">2005</span></li>
-              </ul>
-              <h3 class="food-title">Rouges</h3>
-              <ul class="wine">
-                <li>Bourgueil - Les Malloches <span class="millesime">2005</span></li>
-                <li>Anjou - La Croix Mission <span class="millesime">2009</span></li>
-                <li>Chinon - Baronnie Madeleine <span class="millesime">2001</span></li>
-                <li>Gigondas - Longue Toque <span class="millesime">2010</span></li>
-                <li>Pinot Noir - Ottrot <span class="millesime">2010</span></li>
-                <li>Haut-Médoc - Chateau Peyrabon <span class="millesime">2003</span></li>
-              </ul>
-              <h3 class="food-title">Rosés</h3>
-              <ul class="wine">
-                <li>Costières de Nimes - Les Sarments de la Tuilerie <span class="millesime">2011</span></li>
-              </ul>
+              <div class="carte">
+                <h3>Blancs</h3>
+                <ul class="wine">
+                  <li>Gewurtzraminer - Ziegler <span class="millesime">2009</span></li>
+                  <li>Reuilly - Sorbe <span class="millesime">2010</span></li>
+                  <li>St-Joseph - Chapoutier <span class="millesime">2008</span></li>
+                  <li>Aubance - Montgillet <span class="millesime">2008</span></li>
+                  <li>Loupiac - Kressmann <span class="millesime">2005</span></li>
+                </ul>
+                <h3>Rouges</h3>
+                <ul class="wine">
+                  <li>Bourgueil - Les Malloches <span class="millesime">2005</span></li>
+                  <li>Anjou - La Croix Mission <span class="millesime">2009</span></li>
+                  <li>Chinon - Baronnie Madeleine <span class="millesime">2001</span></li>
+                  <li>Gigondas - Longue Toque <span class="millesime">2010</span></li>
+                  <li>Pinot Noir - Ottrot <span class="millesime">2010</span></li>
+                  <li>Haut-Médoc - Chateau Peyrabon <span class="millesime">2003</span></li>
+                </ul>
+                <h3>Rosés</h3>
+                <ul class="wine">
+                  <li>Costières de Nimes - Les Sarments de la Tuilerie <span class="millesime">2011</span></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="carte">
-      <div class="row-fluid">
-        <div class="span12">
-          <div class="span5 offset1 carte-menu">
-            <div class="big-icon"></div>
-            <h2><span>Le menu du moment</span></h2>
-            <h3 class="food-title">Entrées</h3>
-            <ul class="food">
-              <li>Tartare de Boeuf, inspiration asiatique</li>
-              <li>Carpaccio de St-Jacques de Saint-Brieux au combava</li>
-            </ul>
-            <h3 class="food-title">Plats</h3>
-            <ul class="food">
-              <li>Dos de Cabillaud de la Turballe en croute de chorizo</li>
-              <li>Quasi de veau basse température, émulsion de Machecoul</li>
-            </ul>
-            <h3 class="food-title">Desserts</h3>
-            <ul class="food">
-              <li>Burger à la fraise de Pornic, cheese de mangue et steak choco</li>
-              <li>Pierre et le LU</li>
-            </ul>
-          </div>
-          <div class="span5 carte-vin">
-            <div class="big-icon"></div>
-            <h2><span>La carte des vins</span></h2>
-            <h3 class="food-title">Blancs</h3>
-            <ul class="wine">
-              <li>Gewurtzraminer - Ziegler <span class="millesime">2009</span></li>
-              <li>Reuilly - Sorbe <span class="millesime">2010</span></li>
-              <li>St-Joseph - Chapoutier <span class="millesime">2008</span></li>
-              <li>Aubance - Montgillet <span class="millesime">2008</span></li>
-              <li>Loupiac - Kressmann <span class="millesime">2005</span></li>
-            </ul>
-            <h3 class="food-title">Rouges</h3>
-            <ul class="wine">
-              <li>Bourgueil - Les Malloches <span class="millesime">2005</span></li>
-              <li>Anjou - La Croix Mission <span class="millesime">2009</span></li>
-              <li>Chinon - Baronnie Madeleine <span class="millesime">2001</span></li>
-              <li>Gigondas - Longue Toque <span class="millesime">2010</span></li>
-              <li>Pinot Noir - Ottrot <span class="millesime">2010</span></li>
-              <li>Haut-Médoc - Chateau Peyrabon <span class="millesime">2003</span></li>
-            </ul>
-            <h3 class="food-title">Rosés</h3>
-            <ul class="wine">
-              <li>Costières de Nimes - Les Sarments de la Tuilerie <span class="millesime">2011</span></li>
-            </ul>
-          </div>
+          <div id="dl-menu" class="pt-triggers">
+            <div id="iterateEffects" class="pt-touch-button">Carte des vins</div>
+          </div>          
         </div>
       </div>
     </section>
@@ -260,7 +212,7 @@
 
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/vendor/jquery.slides.min.js"></script>
-    <script src="js/jquery.dlmenu.js"></script>
+  <script src="js/jquery.dlmenu.js"></script>
   <script src="js/pagetransitions.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsYVD-Nocke8NkyXK0KEKYESXlQump6Kk&sensor=false"></script>
   <script src="js/vendor/gmap-0.3.2.js"></script>
