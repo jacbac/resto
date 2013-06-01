@@ -44,7 +44,7 @@ $(document).ready(function(){
       div: '#big-map',
       lat: 47.220486,
       lng: -1.562864,
-      zoom: 15,
+      zoom: 13,
       zoomControl : true,
       zoomControlOpt: {
         style : 'SMALL',
