@@ -368,11 +368,16 @@ section ul {
 
 .fc-calendar .fc-row > div > span.fc-date {
   position: absolute;
-  width: 30px;
+  width: 22px;
+  top: 12px;
   font-size: 1.1rem;
   line-height: 1.6;
   font-weight: 700;
   color: #960018;
+}
+
+.fc-six-rows .fc-row > div > span.fc-date {
+  top: 6px;
 }
 
 .fc-calendar .fc-row > div > span.fc-weekday {
@@ -381,7 +386,12 @@ section ul {
 }
 
 .fc-calendar .fc-row > div.fc-today {
-  background: #f3e0e9;
+  background: #960018;
+  opacity: 0.6;
+}
+
+.fc-calendar .fc-row > div.fc-today > span.fc-date {
+  color: #fff;
 }
 
 .fc-calendar .fc-row > div.fc-out {
