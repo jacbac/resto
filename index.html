@@ -16,17 +16,23 @@
 
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap-responsive.css">
-  <link rel="stylesheet" type="text/css" href="css/animations.css">
+
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/bookblock.css" />
+  <link rel="stylesheet" href="css/demo2.css" />
+  <link rel="stylesheet" href="css/calendar.css" />
+
   <link rel="stylesheet" href="css/main.css">
 
   <script src="js/modernizr.custom.js"></script>
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet.js"></script>
-</head>
-<body>
+
   <!--[if lt IE 8]>
       <p class="chromeframe">Vous utilisez un navigateur <strong>obsolète</strong>. Merci de <a href="http://browsehappy.com/">mettre à jour votre navigateur</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">d'activer Google Chrome Frame</a> pour améliorer votre navigation.</p>
-  <![endif]-->
+  <![endif]-->  
+</head>
+<body>
 
   <header class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
@@ -41,7 +47,7 @@
           <ul class="nav">
             <li><a href="#carte">Notre cuisine</a></li>
             <li><a href="#carte">Menus du marché</a></li>
-            <li><a class="logo" href="#">Pierrot Gourmet</a></li>
+            <li><a class="logo hidden-phone" href="#">Pierrot Gourmet</a></li>
             <li><a href="#events">Nos évènements</a></li>
             <li><a href="#contact">Nous contacter</a></li>
           </ul>
@@ -74,7 +80,7 @@
 
     <section id="ardoise">
       <div class="row-fluid">
-        <div class="span12">
+        <div class="span12 pt-bloc">
           <div id="pt-main" class="pt-perspective">
             <div class="pt-page pt-page-1">
               <div class="carte">
@@ -102,7 +108,7 @@
                   <li>Gewurtzraminer - Ziegler <span class="millesime">2009</span></li>
                   <li>Reuilly - Sorbe <span class="millesime">2010</span></li>
                   <li>St-Joseph - Chapoutier <span class="millesime">2008</span></li>
-                  <li>Aubance - Montgillet <span class="millesime">2008</span></li>
+                  <li>Aubance - Luntgillet <span class="millesime">2008</span></li>
                   <li>Loupiac - Kressmann <span class="millesime">2005</span></li>
                 </ul>
                 <h3>Rouges</h3>
@@ -121,7 +127,7 @@
               </div>
             </div>
           </div>
-          <div id="dl-menu" class="pt-triggers">
+          <div class="pt-triggers">
             <div id="iterateEffects" class="pt-touch-button">Carte des vins</div>
           </div>          
         </div>
@@ -133,7 +139,101 @@
     <section id="events">
       <div class="row-fluid">
         <div class="span12">
-          <div id="expos" class="span4">
+          <div class="bb-custom-wrapper">
+            <div id="bb-bookblock" class="bb-bookblock">
+              <div class="bb-item">
+                <img class="bb-custom-img" src="img/calendar/1.jpg" alt="image01"/>
+                <div class="fc-calendar-wrap">
+                  <h2>January 2013</h2>
+                  <div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>Lundi</div><div>Mardi</div><div>Mercredi</div><div>Jeudi</div><div>Vendredi</div><div>Samedi</div><div>Dimanche</div></div><div class="fc-body"><div class="fc-row"><div></div><div class="fc-content"><span class="fc-date">1</span><span class="fc-weekday">Mar</span><div><span>Nouvel an</span></div></div><div><span class="fc-date">2</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">5</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">7</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">12</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">14</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">19</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">21</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">26</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">28</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">31</span><span class="fc-weekday">Jeu</span></div><div></div><div></div><div></div></div></div></div></div>
+                </div>
+              </div>
+              <div class="bb-item">
+                <img class="bb-custom-img" src="img/calendar/2.jpg" alt="image02"/>
+                <div class="fc-calendar-wrap">
+                  <h2>February 2013</h2>
+                  <div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>Lundi</div><div>Mardi</div><div>Mercredi</div><div>Jeudi</div><div>Vendredi</div><div>Samedi</div><div>Dimanche</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">4</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">5</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">11</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">12</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">18</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">19</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">25</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">26</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Jeu</span></div><div></div><div></div><div></div></div></div></div></div>
+                </div>
+              </div>
+              <div class="bb-item">
+                <img class="bb-custom-img" src="img/calendar/3.jpg" alt="image03"/>
+                <div class="fc-calendar-wrap">
+                  <h2>March 2013</h2>
+                  <div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>Lundi</div><div>Mardi</div><div>Mercredi</div><div>Jeudi</div><div>Vendredi</div><div>Samedi</div><div>Dimanche</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">4</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">5</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">11</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">12</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">18</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">19</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">25</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">26</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">31</span><span class="fc-weekday">Dim</span></div></div></div></div></div>
+                </div>
+              </div>
+              <div class="bb-item">
+                <img class="bb-custom-img" src="img/calendar/4.jpg" alt="image04"/>
+                <div class="fc-calendar-wrap">
+                  <h2>April 2013</h2>
+                  <div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>Lundi</div><div>Mardi</div><div>Mercredi</div><div>Jeudi</div><div>Vendredi</div><div>Samedi</div><div>Dimanche</div></div><div class="fc-body"><div class="fc-row"><div><span class="fc-date">1</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">5</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">8</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">12</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">15</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">19</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">22</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">26</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">29</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Mar</span></div><div></div><div></div><div></div><div></div><div></div></div></div></div></div>
+                </div>
+              </div>
+              <div class="bb-item">
+                <img class="bb-custom-img" src="img/calendar/5.jpg" alt="image05"/>
+                <div class="fc-calendar-wrap">
+                  <h2>May 2013</h2>
+                  <div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>Lundi</div><div>Mardi</div><div>Mercredi</div><div>Jeudi</div><div>Vendredi</div><div>Samedi</div><div>Dimanche</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">5</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">6</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">12</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">13</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">19</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">20</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">26</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">27</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">31</span><span class="fc-weekday">Ven</span></div><div></div><div></div></div></div></div></div>
+                </div>
+              </div>
+              <div class="bb-item">
+                <img class="bb-custom-img" src="img/calendar/6.jpg" alt="image06"/>
+                <div class="fc-calendar-wrap">
+                  <h2>June 2013</h2>
+                  <div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>Lundi</div><div>Mardi</div><div>Mercredi</div><div>Jeudi</div><div>Vendredi</div><div>Samedi</div><div>Dimanche</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">3</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">5</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">10</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">12</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">17</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">19</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">24</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">26</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Dim</span></div></div></div></div></div>
+                </div>
+              </div>
+              <div class="bb-item">
+                <img class="bb-custom-img" src="img/calendar/7.jpg" alt="image07"/>
+                <div class="fc-calendar-wrap">
+                  <h2>July 2013</h2>
+                  <div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>Lundi</div><div>Mardi</div><div>Mercredi</div><div>Jeudi</div><div>Vendredi</div><div>Samedi</div><div>Dimanche</div></div><div class="fc-body"><div class="fc-row"><div><span class="fc-date">1</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">5</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">8</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">12</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">15</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">19</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">22</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">26</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">29</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">31</span><span class="fc-weekday">Mer</span></div><div></div><div></div><div></div><div></div></div></div></div></div>
+                </div>
+              </div>
+              <div class="bb-item">
+                <img class="bb-custom-img" src="img/calendar/8.jpg" alt="image08"/>
+                <div class="fc-calendar-wrap">
+                  <h2>August 2013</h2>
+                  <div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>Lundi</div><div>Mardi</div><div>Mercredi</div><div>Jeudi</div><div>Vendredi</div><div>Samedi</div><div>Dimanche</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">5</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">12</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">19</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">26</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">31</span><span class="fc-weekday">Sam</span></div><div></div></div></div></div></div>
+                </div>
+              </div>
+              <div class="bb-item">
+                <img class="bb-custom-img" src="img/calendar/9.jpg" alt="image09"/>
+                <div class="fc-calendar-wrap">
+                  <h2>September 2013</h2>
+                  <div class="fc-calendar-container"><div class="fc-calendar fc-six-rows"><div class="fc-head"><div>Lundi</div><div>Mardi</div><div>Mercredi</div><div>Jeudi</div><div>Vendredi</div><div>Samedi</div><div>Dimanche</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">2</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">5</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">9</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">12</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">16</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">19</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">23</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">26</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">30</span><span class="fc-weekday">Lun</span></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></div></div>
+                </div>
+              </div>
+              <div class="bb-item">
+                <img class="bb-custom-img" src="img/calendar/10.jpg" alt="image10"/>
+                <div class="fc-calendar-wrap">
+                  <h2>October 2013</h2>
+                  <div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>Lundi</div><div>Mardi</div><div>Mercredi</div><div>Jeudi</div><div>Vendredi</div><div>Samedi</div><div>Dimanche</div></div><div class="fc-body"><div class="fc-row"><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">5</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">7</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">12</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">14</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">19</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">21</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">26</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">28</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">31</span><span class="fc-weekday">Jeu</span></div><div></div><div></div><div></div></div></div></div></div>
+                </div>
+              </div>
+              <div class="bb-item">
+                <img class="bb-custom-img" src="img/calendar/11.jpg" alt="image11"/>
+                <div class="fc-calendar-wrap">
+                  <h2>November 2013</h2>
+                  <div class="fc-calendar-container"><div class="fc-calendar fc-five-rows"><div class="fc-head"><div>Lundi</div><div>Mardi</div><div>Mercredi</div><div>Jeudi</div><div>Vendredi</div><div>Samedi</div><div>Dimanche</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">2</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">4</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">5</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">9</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">11</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">12</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">16</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">18</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">19</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">23</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">25</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">26</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">30</span><span class="fc-weekday">Sam</span></div><div></div></div></div></div></div>
+                </div>
+              </div>
+              <div class="bb-item">
+                <img class="bb-custom-img" src="img/calendar/12.jpg" alt="image12"/>
+                <div class="fc-calendar-wrap">
+                  <h2>December 2013</h2>
+                  <div class="fc-calendar-container"><div class="fc-calendar fc-six-rows"><div class="fc-head"><div>Lundi</div><div>Mardi</div><div>Mercredi</div><div>Jeudi</div><div>Vendredi</div><div>Samedi</div><div>Dimanche</div></div><div class="fc-body"><div class="fc-row"><div></div><div></div><div></div><div></div><div></div><div></div><div><span class="fc-date">1</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">2</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">3</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">4</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">5</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">6</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">7</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">8</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">9</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">10</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">11</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">12</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">13</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">14</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">15</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">16</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">17</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">18</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">19</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">20</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">21</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">22</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">23</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">24</span><span class="fc-weekday">Mar</span></div><div><span class="fc-date">25</span><span class="fc-weekday">Mer</span></div><div><span class="fc-date">26</span><span class="fc-weekday">Jeu</span></div><div><span class="fc-date">27</span><span class="fc-weekday">Ven</span></div><div><span class="fc-date">28</span><span class="fc-weekday">Sam</span></div><div><span class="fc-date">29</span><span class="fc-weekday">Dim</span></div></div><div class="fc-row"><div><span class="fc-date">30</span><span class="fc-weekday">Lun</span></div><div><span class="fc-date">31</span><span class="fc-weekday">Mar</span></div><div></div><div></div><div></div><div></div><div></div></div></div></div></div>
+                </div>
+              </div>
+            </div>
+            <nav>
+              <a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+              <a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+            </nav>
+            <h3>Photos by <a href="http://www.flickr.com/photos/majownik">majownik</a></h3>
+          </div>
+
+          <div id="expos" class="span4 hidden-phone">
             <div class="big-icon img-circle"></div>
             <h2><span>L'expo du moment</span></h2>
             <h3><span>Dali et les trompettistes</span></h3>
@@ -148,7 +248,7 @@
             </div>            
             <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
           </div>
-          <div id="concerts" class="span8">
+          <div id="concerts" class="span8 hidden-phone">
             <div class="big-icon img-circle img-circle"></div>
             <h2><span>Nos prochains RDV</span></h2>
             <div class="span5">
@@ -210,6 +310,68 @@
 
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/vendor/jquery.slides.min.js"></script>
+  <script src="js/jquery.bookblock.js"></script>
+<script>
+      var Page = (function() {
+        
+        var config = {
+            $bookBlock : $( '#bb-bookblock' ),
+            $navNext : $( '#bb-nav-next' ),
+            $navPrev : $( '#bb-nav-prev' )
+          },
+          init = function() {
+            config.$bookBlock.bookblock( {
+              orientation : 'horizontal',
+              speed : 700
+            } );
+            initEvents();
+          },
+          initEvents = function() {
+
+            var $slides = config.$bookBlock.children();
+            
+            // add navigation events
+            config.$navNext.on( 'click touchstart', function() {
+              config.$bookBlock.bookblock( 'next' );
+              return false;
+            } );
+
+            config.$navPrev.on( 'click touchstart', function() {
+              config.$bookBlock.bookblock( 'prev' );
+              return false;
+            } );
+
+            // add keyboard events
+            $( document ).keydown( function(e) {
+              var keyCode = e.keyCode || e.which,
+                arrow = {
+                  left : 37,
+                  up : 38,
+                  right : 39,
+                  down : 40
+                };
+
+              switch (keyCode) {
+                case arrow.up:
+                  config.$bookBlock.bookblock( 'prev' );
+                  e.preventDefault();
+                  break;
+                case arrow.down:
+                  config.$bookBlock.bookblock( 'next' );
+                  e.preventDefault();
+                  break;
+              }
+
+            } );
+          };
+
+          return { init : init };
+
+      })();
+    </script>
+    <script>
+        Page.init();
+    </script>
   <script src="js/jquery.dlmenu.js"></script>
   <script src="js/pagetransitions.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsYVD-Nocke8NkyXK0KEKYESXlQump6Kk&sensor=false"></script>
