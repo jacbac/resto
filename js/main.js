@@ -42,8 +42,8 @@ $(document).ready(function(){
    */
    var bigMap = new GMaps({
       div: '#big-map',
-      lat: 47.220486,
-      lng: -1.562864,
+      lat: 47.216537,
+      lng: -1.521263,
       zoom: 13,
       zoomControl : true,
       zoomControlOpt: {
