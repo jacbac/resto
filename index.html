@@ -276,17 +276,24 @@
     <section id="contact">
       <div class="row-fluid">
         <div class="span12">
-          <div class="span5 offset1">
+          <div class="span5 offset1" itemscope itemtype="http://schema.org/Restaurant">
             <div class="big-icon img-circle"></div>
             <h2><span>Infos pratiques</span></h2>
-            <ul class="infos">
-              <li>Restaurant Pierrot Gourmet</li>
-              <li>28 Place Viarme 44100 Nantes</li>
-              <li>Tél. : 02 40 00 00 00</li>
-              <li>Email : contact@pierrot-gourmet.fr</li>
-              <li>Parking place Viarme gratuit entre 12h-14h et le soir après 19h</li>
-              <li>Tramway Ligne 3 - Arrêt Viarme-Talensac</li>
-              <li>Station Bicloo - place Viarme n°18</li>
+            <ul class="adr" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <li class="name" itemprop="name">Pierrot Gourmet</li>
+              <li itemprop="streetAddress">28 Place Viarme</li>
+              <li><span itemprop="postalCode">44100</span> <span itemprop="addressLocality">Nantes</span> <span class="country-name">France</span></li>
+            </ul>
+            <ul class="calls">
+              <li itemprop="telephone">02 40 00 00 00</li>
+              <li><a class="email" href="mailto:contact@pierrot-gourmet.fr">contact@pierrot-gourmet.fr</a></li>
+              <li><a class="social url" href="#facebook">f</a></li>
+            </ul>
+            <time itemprop="openingHours" datetime="Tu,Th 12:00-15:00">Tuesdays and Thursdays 4-8pm</time>
+            <ul class="access">
+              <li>Parking : place Viarme gratuit entre 12h-14h et le soir après 19h</li>
+              <li>Tramway : ligne 3 arrêt Viarme-Talensac</li>
+              <li>Bicloo : station n°18 place Viarme</li>
             </ul>
           </div>
           <div class="span5">
