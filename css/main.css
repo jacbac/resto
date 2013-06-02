@@ -1,5 +1,5 @@
 body {
-  background-color: #960018;
+  background: #960018 url(/img/checkered_pattern.png) repeat;
   color: #eee;  
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
@@ -85,13 +85,15 @@ section{
   font-size: 8rem;
   line-height: 0.8;
   margin: 0 0 60px -8px; /* hack the lettrine 'going right' effect */
-text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;
+  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #222;
 }
 
 .subtitle p {
   font-weight: 700;
   font-size: 4.4rem;
   line-height: 0.9;
+  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #222;
+
 }
 
 #content h2 {
@@ -104,7 +106,7 @@ text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #
 }
 
 #content h2 span {
-	background-color: #960018;
+	background: #960018 url(/img/checkered_pattern.png) repeat;
   padding: 0 20px;
   position: relative;
   top: -24px;
