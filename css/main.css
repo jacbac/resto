@@ -17,7 +17,7 @@ a:focus {
   text-decoration: none;
 }
 
-/* HEADER --------------------------------------------------------------------------------------- */
+/* HEADER ------------------------------------------------------------------- */
 
 .navbar-inner .center{
 	margin: 0 10%;
@@ -61,39 +61,8 @@ a:focus {
 
 /* CONTENT ------------------------------------------------------------------ */
 
-#content {
-
-}
-
 section{
   margin-top: 30px;
-}
-
-.title {
-  margin-bottom: 40px;
-}
-
-#content h1,
-.subtitle p {
-  font-family: 'Tangerine', cursive;
-  text-align: center;
-  color: #fff;
-}
-
-#content h1 {
-  font-weight: 700;
-  font-size: 8rem;
-  line-height: 0.8;
-  margin: 0 0 60px -8px; /* hack the lettrine 'going right' effect */
-  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #222;
-}
-
-.subtitle p {
-  font-weight: 700;
-  font-size: 4.4rem;
-  line-height: 0.9;
-  text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #222;
-
 }
 
 #content h2 {
@@ -118,6 +87,27 @@ section ul {
   margin: 0 auto;
 }
 
+.arrow-next-1 {
+  width: 0; 
+  height: 0;
+  margin: 16px auto;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 36px solid #fff;
+  opacity: 0.7;
+}
+
+.arrow-next-2 {
+  width: 0; 
+  height: 0;
+  margin: 16px auto 0;
+  padding-bottom: 14px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 36px solid #960018;
+  opacity: 0.7;
+}
+
 .big-icon {
 	height: 140px;
 	width: 140px;
@@ -125,14 +115,67 @@ section ul {
 	background-color: #eee;
 }
 
+/* SECTION INTRO ------------------------------------------------------------ */
+
+.title {
+  margin-bottom: 10px;
+}
+
+#content h1,
+.subtitle p {
+  font-family: 'Tangerine', cursive;
+  text-align: center;
+  color: #fff;
+}
+
+#content h1 {
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 0.8;
+  margin: 0 0 40px -8px; /* hack the lettrine 'going right' effect */
+  text-shadow:  0px 1px 0px #999,
+                0px 2px 0px #888,
+                0px 3px 0px #777,
+                0px 4px 0px #666,
+                0px 5px 0px #555,
+                0px 6px 0px #222;
+}
+
+.subtitle p {
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 0.9;
+  text-shadow:  0px 1px 0px #999,
+                0px 2px 0px #888,
+                0px 3px 0px #777,
+                0px 4px 0px #222;
+}
+
+/* SECTION INFO ----- ------------------------------------------------------- */
+
+#presentation {
+  background: #fff url(/img/cream_dust.png) repeat;
+  padding: 10px 0 20px;
+}
+
+#presentation p {
+  width: 80%;
+  margin: 0 auto 20px;
+  text-align: justify;
+  color: #222;
+}
+
+#slides-big {
+  height: 200px;
+}
+
 /* SECTION ARDOISE ---------------------------------------------------------- */
 
 #ardoise {
-  width: 96%;
+  width: 100%;
   height: 700px;
-  background: #61000F url(/img/checkered_pattern.png) repeat;
+  background: #960018 url(/img/checkered_pattern.png) repeat;
   margin: 30px auto 0;
-  border: 6px solid white;
 }
 
 .carte {
@@ -225,7 +268,6 @@ section ul {
   position: absolute;
   z-index: 999999;
   left: 50%;
-  background-color: #fff;
   height: 40px;
   -webkit-transform: translateX(-50%);
      -moz-transform: translateX(-50%);
@@ -248,7 +290,7 @@ section ul {
   padding-top: 4px;
   font-size: 1.4rem;
   font-weight: 600;
-  color: #222;
+  color: #fff;
   text-align: center;
 }
 
@@ -530,6 +572,11 @@ section ul {
 	margin-bottom: 40px;
 }
 
+#info {
+  width: 90%;
+  margin: 0 auto;
+}
+
 #contact ul {
   font-size: 1.4rem;
 }
@@ -565,7 +612,7 @@ section ul {
 }
 
 .map{
-  width: 90%;
+  width: 86%;
   margin: 0 auto;
   color: #222;  
 }
@@ -584,7 +631,7 @@ section ul {
   font-size: 0.8rem;
 }
 
-/* FOOTER --------------------------------------------------------------------------------------- */
+/* FOOTER ------------------------------------------------------------------- */
 
 footer {
   background-color: #000;
@@ -679,7 +726,7 @@ footer {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 480px) {
+@media (min-width: 481px) {
 
   #slides-big {
   margin-bottom: 100px;
@@ -691,8 +738,16 @@ footer {
 
 }
 
-@media (min-width: 767px) {
+@media (min-width: 600px) {
   
+  #intro,
+  #presentation,
+  #ardoise,
+  #events,
+  #contact {
+    height: 800px;
+  }
+
   #contact .map-phone {
     margin-top: 0;
   }
@@ -700,8 +755,8 @@ footer {
 
 }
 
-@media (min-width: 979px) {
-
+@media (min-width: 769px) {
+  
   .container.navbar-wrapper {
     margin-bottom: 0;
     width: auto;
@@ -722,4 +777,17 @@ footer {
     margin-bottom: 16px;
   }
 
-}   
+  #ardoise {
+    max-width: 540px;
+  }
+
+}
+
+@media (min-width: 1025px) {
+  
+.navbar .nav > li > a {
+  padding: 8px 8px 12px;
+}
+
+
+}  
