@@ -28,6 +28,7 @@ $(document).ready(function(){
         effect: "fade"
       },
       pagination: {
+        active: false,
         effect: "fade"
       },
 	    effect: {
