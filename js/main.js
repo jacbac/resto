@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  
+
   // slides.js
   $(function(){
     $("#slides-big").slidesjs({
@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     $("#slides-expo").slidesjs({
       width: 600,
-      height: 300,
+      height: 420,
       navigation: {
         active: false,
         effect: "fade"
@@ -40,7 +40,7 @@ $(document).ready(function(){
   });
 
   var Page = (function() {
-    
+
     var config = {
         $bookBlock : $( '#bb-bookblock' ),
         $navNext : $( '#bb-nav-next' ),
@@ -56,7 +56,7 @@ $(document).ready(function(){
       initEvents = function() {
 
         var $slides = config.$bookBlock.children();
-        
+
         // add navigation events
         config.$navNext.on( 'click touchstart', function() {
           config.$bookBlock.bookblock( 'next' );
@@ -97,7 +97,7 @@ $(document).ready(function(){
   })();
 
   Page.init();
-  
+
   /**
    * Google Map API v3
    */
@@ -108,7 +108,7 @@ $(document).ready(function(){
       center: new google.maps.LatLng(47.216303,-1.556454),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
-    
+
     map = new google.maps.Map(document.getElementById('big-map'),
         mapOptions);
 
@@ -128,7 +128,7 @@ $(document).ready(function(){
     } else {
       marker.setAnimation(google.maps.Animation.BOUNCE);
     }
-  }  
+  }
 
    //'<h4>Restaurant Pierrot Gourmet</h4><p>28 Place Viarme<br />44100 Nantes</p><p>Parking place Viarme gratuit<br />le midi entre 12h-14h et le soir après 19h</p>'
 

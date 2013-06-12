@@ -1,6 +1,4 @@
 body {
-  background: #960018 url(/img/checkered_pattern.png) repeat;
-  color: #eee;  
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -18,6 +16,10 @@ a:focus {
 }
 
 /* HEADER ------------------------------------------------------------------- */
+
+.navbar-fixed-top {
+  margin-bottom: 0;
+}
 
 .navbar-inner .center{
 	margin: 0 10%;
@@ -61,10 +63,6 @@ a:focus {
 
 /* CONTENT ------------------------------------------------------------------ */
 
-section{
-  margin-top: 30px;
-}
-
 section ul {
 	list-style-type: none;
 	line-height: 1.6;
@@ -72,7 +70,7 @@ section ul {
 }
 
 .arrow-next-1 {
-  width: 0; 
+  width: 0;
   height: 0;
   margin: 16px auto;
   border-left: 30px solid transparent;
@@ -82,7 +80,7 @@ section ul {
 }
 
 .arrow-next-2 {
-  width: 0; 
+  width: 0;
   height: 0;
   margin: 16px auto 0;
   padding-bottom: 14px;
@@ -101,8 +99,14 @@ section ul {
 
 /* SECTION INTRO ------------------------------------------------------------ */
 
+#intro {
+  height: 430px;
+  background: #960018 url(/img/checkered_pattern.png) repeat;
+  color: #eee;
+}
+
 .title {
-  margin-bottom: 10px;
+  padding: 50px 0 20px 0;
 }
 
 #content h1,
@@ -137,9 +141,10 @@ section ul {
 
 /* SECTION PRESENTATION ----------------------------------------------------- */
 
-#presentation {
+#presentation,
+#events {
   background: #fff url(/img/cream_dust.png) repeat;
-  padding: 10px 0 20px;
+  height: 420px;
 }
 
 #presentation p,
@@ -150,11 +155,13 @@ section ul {
   color: #222;
 }
 
-#slides-big {
+#slides-big,
+#slides-expo {
   height: 200px;
 }
 
-#presentation h2 {
+#presentation h2,
+#events h2 {
   font-size: 1.2rem;
   line-height: 0.6;
   color: #960018;
@@ -163,11 +170,12 @@ section ul {
   text-transform: uppercase;
 }
 
-#presentation h2 span {
+#presentation h2 span,
+#events h2 span {
   background: #960018 url(/img/cream_dust.png) repeat;
   padding: 0 20px;
   position: relative;
-  top: -20px;
+  top: -8px;
 }
 
 /* SECTION ARDOISE ---------------------------------------------------------- */
@@ -240,7 +248,7 @@ section ul {
 
 .pt-page {
   position: absolute;
-  top: 0px; 
+  top: 0px;
   width: 100%;
   visibility: hidden;
   overflow: hidden;
@@ -299,7 +307,7 @@ section ul {
 
 #events {
   width: 100%;
-  height: 480px;  
+  height: 480px;
   background: #fff url(/img/cream_dust.png) repeat;
   padding: 10px 0 20px;
 }
@@ -584,6 +592,41 @@ section ul {
 
 /* CONTACTS ----------------------------------------------------------------- */
 
+#test {
+  height: 420px;
+  background: #960018 url(/img/checkered_pattern.png) repeat;
+  color: #fff;
+}
+
+#test p {
+  width: 80%;
+  margin: 0 auto 20px;
+  text-align: justify;
+  color: #fff;
+}
+
+#test h2 {
+  font-size: 1.2rem;
+  line-height: 0.6;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#test h2 span {
+  background: #960018 url(/img/checkered_pattern.png) repeat;
+  padding: 0 20px;
+  position: relative;
+  top: -8px;
+}
+
+#test ul {
+  font-size: 1.2rem;
+}
+
+/* ------------------ */
+
 #contact {
 	margin-top: 60px;
 }
@@ -591,6 +634,7 @@ section ul {
 #info {
   width: 90%;
   margin: 0 auto;
+  padding-top: 24px;
 }
 
 #contact ul {
@@ -602,7 +646,7 @@ section ul {
   font-size: 2.4rem;
   text-shadow: 0px 1px 0px #444, 0px 2px 0px #222;
   padding: 0 0 20px;
-  font-weight: 700;  
+  font-weight: 700;
   text-align: center;
 }
 
@@ -612,16 +656,16 @@ section ul {
 }
 
 .calls {
-  font-weight: 600;  
+  font-weight: 600;
 }
 
 .access {
-  
+
 }
 
 #contact .map-phone {
   width: 100%;
-  height: 480px;  
+  height: 480px;
   background: #fff url(/img/cream_dust.png) repeat;
   padding: 10px 0 20px;
 }
@@ -633,7 +677,7 @@ section ul {
 .map{
   width: 86%;
   margin: 0 auto;
-  color: #222;  
+  color: #222;
 }
 
 .gmap-big{
@@ -655,13 +699,10 @@ section ul {
 footer {
   background-color: #000;
   color: #eee;
-  margin-right: -20px;
-  margin-left: -20px;
-  padding-bottom: 20px;
 }
 
 #signature {
-  padding: 10px 28px 10px 28px;
+  padding: 10px 36px 10px 36px;
   text-align: center;
   font-size: 1.2rem;
 }
@@ -673,6 +714,7 @@ footer {
 #signature a {
   color: #eee;
   text-decoration: none;
+  padding-bottom: 3px;
   border-bottom: 1px solid #eee;
 }
 
@@ -758,7 +800,7 @@ footer {
 }
 
 @media (min-width: 600px) {
-  
+
   #intro,
   #presentation,
   #ardoise,
@@ -775,7 +817,7 @@ footer {
 }
 
 @media (min-width: 769px) {
-  
+
   .container.navbar-wrapper {
     margin-bottom: 0;
     width: auto;
@@ -803,10 +845,10 @@ footer {
 }
 
 @media (min-width: 1025px) {
-  
+
 .navbar .nav > li > a {
   padding: 8px 8px 12px;
 }
 
 
-}  
+}
