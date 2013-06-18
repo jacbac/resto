@@ -236,6 +236,9 @@ section ul {
 
 .carte li {
   line-height: 1.2;
+}
+
+.pt-page-1 li {
   margin-bottom: 10px;
 }
 
@@ -299,7 +302,7 @@ section ul {
 .pt-trig-top,
 .pt-trig-bottom {
   position: absolute;
-  z-index: 999999;
+  z-index: 10;
   left: 50%;
   height: 40px;
   -webkit-transform: translateX(-50%);
@@ -319,8 +322,12 @@ section ul {
   width: 300px;
 }
 
+.pt-trig-bottom a {
+  display: block;
+  margin: 0 auto;
+}
+
 .pt-touch-button {
-  padding-top: 4px;
   font-size: 1.4rem;
   font-weight: 600;
   color: #fff;
@@ -438,6 +445,14 @@ section ul {
 
 .access {
   margin-bottom: 20px;
+}
+
+.access li {
+  text-align: justify;
+}
+
+.access span {
+  padding-right: 10px;
 }
 
 #contact .map-phone {

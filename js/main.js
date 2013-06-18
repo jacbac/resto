@@ -1,42 +1,51 @@
 $(document).ready(function(){
 
-  // slides.js
-  $(function(){
-    $("#slides-big").slidesjs({
-      width: 600,
-      height: 420,
-      navigation: {
-        active: false,
-        effect: "fade"
-      },
-      pagination: {
-        active: false,
-        effect: "fade"
-      },
-	    effect: {
-	      fade: {
-	        speed: 800
-      	}
-      }
-    });
+  // Switch text ardoise // TODO toggle() ?
+  $(".pt-trig-bottom a").click(function () {
+    if($("#move").text() === "Nos vins du moment") {
+      $("#move").text("Notre menu du moment");
+      $(this).text("Voir nos vins du moment");
+    } else {
+      $("#move").text("Nos vins du moment");
+      $(this).text("Voir notre menu du moment");
+    }
+  });
 
-    $("#slides-expo").slidesjs({
-      width: 600,
-      height: 420,
-      navigation: {
-        active: false,
-        effect: "fade"
-      },
-      pagination: {
-        active: false,
-        effect: "fade"
-      },
-	    effect: {
-	      fade: {
-	        speed: 800
-      	}
-      }
-    });
+  // slides.js // TODO refactor
+  $("#slides-big").slidesjs({
+    width: 600,
+    height: 420,
+    navigation: {
+      active: false,
+      effect: "fade"
+    },
+    pagination: {
+      active: false,
+      effect: "fade"
+    },
+    effect: {
+      fade: {
+        speed: 800
+    	}
+    }
+  });
+
+  $("#slides-expo").slidesjs({
+    width: 600,
+    height: 420,
+    navigation: {
+      active: false,
+      effect: "fade"
+    },
+    pagination: {
+      active: false,
+      effect: "fade"
+    },
+    effect: {
+      fade: {
+        speed: 800
+    	}
+    }
   });
 
   var Page = (function() {
