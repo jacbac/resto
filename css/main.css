@@ -396,6 +396,11 @@ section ul {
 
 #contact ul {
   font-size: 1.4rem;
+  text-align: center;
+}
+
+#info ul li {
+  text-align: center;
 }
 
 .adr li.name {
@@ -409,15 +414,25 @@ section ul {
 
 .adr {
   font-weight: 600;
-
+  margin-bottom: 20px;
 }
 
 .calls {
   font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.socials {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.hours {
+  margin-bottom: 20px;
 }
 
 .access {
-
+  margin-bottom: 20px;
 }
 
 #contact .map-phone {
