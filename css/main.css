@@ -63,6 +63,10 @@ a:focus {
 
 /* CONTENT ------------------------------------------------------------------ */
 
+#content {
+  background: #fff url(/img/cream_dust.png) repeat;
+}
+
 section ul {
 	list-style-type: none;
 	line-height: 1.6;
@@ -143,7 +147,6 @@ section ul {
 
 #presentation,
 #events {
-  background: #fff url(/img/cream_dust.png) repeat;
   height: 470px;
 }
 
@@ -339,7 +342,6 @@ section ul {
 #events {
   width: 100%;
   height: 470px;
-  background: #fff url(/img/cream_dust.png) repeat;
   padding: 10px 0 20px;
 }
 
@@ -467,7 +469,6 @@ section ul {
 }
 
 #map {
-  background: #fff url(/img/cream_dust.png) repeat;
   height: 450px;
 }
 
@@ -628,10 +629,6 @@ footer {
 
 @media (min-width: 481px) {
 
-  #slides-big {
-  margin-bottom: 100px;
-  }
-
   #content {
     padding-top: 0;
   }
@@ -645,6 +642,10 @@ footer {
   #ardoise,
   #events,
   #contact {
+    height: 540px;
+  }
+
+  #ardoise {
     height: 800px;
   }
 
@@ -665,29 +666,129 @@ footer {
     border-radius: 0;
   }
 
-  #content {
-      padding-top: 80px;
+  .navbar-inner .center {
+    margin: 0 14%;
   }
 
-  #slides-big {
-    margin-bottom: 100px;
+  .navbar .nav > li > a.logo {
+    padding: 11px 10px 0 10px;
   }
 
-  #slides-expo {
-    margin-bottom: 16px;
-  }
-
-  #ardoise {
+  #pt-main {
     max-width: 540px;
+    margin: auto;
   }
 
 }
 
 @media (min-width: 1025px) {
 
-.navbar .nav > li > a {
-  padding: 8px 8px 12px;
-}
+  .navbar .nav > li > a {
+    padding: 8px 8px 12px;
+  }
 
+  .navbar .nav > li > a.logo {
+    padding: 11px 10px 0 10px;
+  }
+
+  #content h1 {
+    font-size: 9.4rem;
+    margin: 140px 0 40px -8px;
+  }
+
+  #presentation h2,
+  #infos h2,
+  #ardoise h2,
+  #events h2,
+  #map h2 {
+    font-size: 1.8rem;
+  }
+
+  #presentation h2 span,
+  #infos h2 span,
+  #ardoise h2 span,
+  #events h2 span,
+  #map h2 span {
+    padding: 0 90px;
+    top: -14px;
+  }
+
+  .pres {
+    width: 50%;
+    float: left;
+    margin: 120px auto;
+    font-size: 1.2rem;
+  }
+
+  .pres {
+    width: 50%;
+    float: left;
+    margin: 120px auto;
+    font-size: 1.2rem;
+  }
+
+  #slides-big {
+    height: 480px;
+    padding: 60px 0;
+    margin-right: 40px;
+  }
+
+  .pres-events {
+    width: 50%;
+    float: right;
+    margin: 120px auto;
+    font-size: 1.2rem;
+  }
+
+  #slides-expo {
+    height: 480px;
+    padding: 60px 0;
+    margin-left: 40px;
+  }
+
+  #slides-big .slidesjs-navigation,
+  #slides-expo .slidesjs-navigation {
+    margin-top: -80px;
+  }
+
+  #map h2 {
+    color: #fff;
+  }
+
+  #map h2 span {
+    background: #960018 url(/img/checkered_pattern.png) repeat;
+  }
+
+  #infos {
+    width: 50%;
+    float: left;
+  }
+
+  .arrow-next-1,
+  .arrow-next-2 {
+    display: none;
+  }
+
+  #infos ul {
+    font-size: 1.3rem;
+  }
+
+  #infos a.tel {
+    display: block;
+    font-size: 1.6rem;
+    padding-bottom: 20px;
+  }
+
+  #map {
+    width: 50%;
+    float: left;
+    height: 470px;
+    background: #960018 url(/img/checkered_pattern.png) repeat;
+    color: #fff;
+  }
+
+  .gmap-big {
+    height: 320px;
+  }
 
 }
