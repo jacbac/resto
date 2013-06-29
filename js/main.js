@@ -11,6 +11,10 @@ $(document).ready(function(){
     }
   });
 
+  if($(window).width() > 768){
+    $('.pt-trig-bottom .pt-touch-button').attr('href', '#carte');
+  }
+
   // slides.js // TODO refactor
   $("#slides-big").slidesjs({
     width: 600,

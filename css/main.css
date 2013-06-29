@@ -331,10 +331,26 @@ section ul {
 }
 
 .pt-touch-button {
+  height: 40px;
+  background-color: #fff;
+  color: #960018;
+  text-align: center;
   font-size: 1.4rem;
   font-weight: 600;
-  color: #fff;
-  text-align: center;
+  border:1px solid #960019;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  -webkit-box-shadow:  1px 1px 10px 1px rgba(50, 0, 0, 0.8);
+          box-shadow:  1px 1px 10px 1px rgba(50, 0, 0, 0.8);
+}
+
+.pt-touch-button:hover,
+.pt-touch-button:active {
+  color: #960018;
+  font-weight: bold;
+  -webkit-box-shadow: inset 1px 1px 3px 1px rgba(50, 0, 0, 0.8);
+          box-shadow: inset 1px 1px 3px 1px rgba(50, 0, 0, 0.8);
 }
 
 /* EVENTS ------------------------------------------------------------------- */
@@ -646,7 +662,7 @@ footer {
   }
 
   #ardoise {
-    height: 800px;
+    height: 900px;
   }
 
   #contact .map-phone {
@@ -656,7 +672,7 @@ footer {
 
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
   .container.navbar-wrapper {
     margin-bottom: 0;
@@ -674,14 +690,18 @@ footer {
     padding: 11px 10px 0 10px;
   }
 
+  #ardoise h2 {
+    margin-bottom: 40px;
+  }
+
   #pt-main {
     max-width: 540px;
-    margin: auto;
+    margin: 40px auto 0;
   }
 
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 
   .navbar .nav > li > a {
     padding: 8px 8px 12px;
@@ -711,6 +731,10 @@ footer {
   #map h2 span {
     padding: 0 90px;
     top: -14px;
+  }
+
+  #events h2 span {
+    top: -24px;
   }
 
   .pres {
@@ -790,5 +814,10 @@ footer {
   .gmap-big {
     height: 320px;
   }
+
+
+
+
+
 
 }
