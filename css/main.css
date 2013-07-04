@@ -294,13 +294,22 @@ section ul {
   visibility: visible;
 }
 
-.pt-page-1 {
-  margin-top: 60px;
+.pt-page-1 {          /* menu du jour */
+  margin-top: 150px;
+  max-width: 680px;
 }
 
-.pt-page-2 {
-  margin-top: 30px;
+.pt-page-2 {          /* menu du mois */
+  margin-top: 110px;
+  max-width: 680px;
 }
+
+.pt-page-3 {          /* vins */
+  margin-top: 100px;
+  max-width: 510px;
+}
+
+
 
 .pt-trig-top,
 .pt-trig-bottom {
@@ -326,8 +335,8 @@ section ul {
 }
 
 .pt-trig-bottom a {
-  display: block;
   margin: 0 auto;
+  padding: 2px 26px 10px;
 }
 
 .pt-touch-button {
@@ -669,6 +678,18 @@ footer {
     margin-top: 0;
   }
 
+  .pt-trig-bottom {
+    width: 600px;
+    display: inline-block;
+  }
+
+  .carte {
+    margin-bottom: 0;
+    padding: 0;
+    color: #fff;
+  }
+
+
 
 }
 
@@ -695,7 +716,7 @@ footer {
   }
 
   #pt-main {
-    max-width: 540px;
+    max-width: 620px;
     margin: 40px auto 0;
   }
 
