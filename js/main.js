@@ -1,13 +1,13 @@
 $(document).ready(function(){
 
   // Switch text ardoise // TODO toggle() ?
-  $(".pt-trig-bottom a").click(function () {
-    if($("#move").text() === "Nos vins du moment") {
-      $("#move").text("Notre menu du moment");
-      $(this).text("Voir nos vins du moment");
+  $('.pt-trig-bottom a').click(function () {
+    if($('#move').text() === 'Nos vins du moment') {
+      $('#move').text('Notre menu du moment');
+      $(this).text('Voir nos vins du moment');
     } else {
-      $("#move").text("Nos vins du moment");
-      $(this).text("Voir notre menu du moment");
+      $('#move').text('Nos vins du moment');
+      $(this).text('Voir notre menu du moment');
     }
   });
 
@@ -15,17 +15,26 @@ $(document).ready(function(){
     $('.pt-trig-bottom .pt-touch-button').attr('href', '#carte');
   }
 
+  // Load JSON data
+  $('.slidesjs-navigation').click(function(){
+    $.getJSON('data/events.js',function(result){
+      $.each(result, function(index, field){
+        $('.pres-events').append(field + ' ');
+      });
+    });
+  });
+
   // slides.js // TODO refactor
-  $("#slides-big").slidesjs({
+  $('#slides-big').slidesjs({
     width: 600,
     height: 420,
     navigation: {
       active: false,
-      effect: "fade"
+      effect: 'fade'
     },
     pagination: {
       active: false,
-      effect: "fade"
+      effect: 'fade'
     },
     effect: {
       fade: {
@@ -34,16 +43,16 @@ $(document).ready(function(){
     }
   });
 
-  $("#slides-expo").slidesjs({
+  $('#slides-expo').slidesjs({
     width: 600,
     height: 420,
     navigation: {
       active: false,
-      effect: "fade"
+      effect: 'fade'
     },
     pagination: {
       active: false,
-      effect: "fade"
+      effect: 'fade'
     },
     effect: {
       fade: {

@@ -679,7 +679,7 @@ footer {
   }
 
   .pt-trig-bottom {
-    width: 600px;
+    width: 566px;
     display: inline-block;
   }
 
@@ -765,13 +765,6 @@ footer {
     font-size: 1.2rem;
   }
 
-  .pres {
-    width: 50%;
-    float: left;
-    margin: 120px auto;
-    font-size: 1.2rem;
-  }
-
   #slides-big {
     height: 480px;
     padding: 60px 0;
@@ -781,8 +774,21 @@ footer {
   .pres-events {
     width: 50%;
     float: right;
-    margin: 120px auto;
+    margin: auto;
     font-size: 1.2rem;
+  }
+
+  .pres-events h3 {
+    width: 80%;
+    margin: 46px auto 0;
+    font-size: 1.6rem;
+  }
+
+  .pres-events .date {
+    width: 80%;    
+    margin: 0 auto 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
   }
 
   #slides-expo {
