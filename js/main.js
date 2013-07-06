@@ -17,12 +17,25 @@ $(document).ready(function(){
 
   // Load JSON data
   $('.slidesjs-navigation').click(function(){
-    $.getJSON('data/events.js',function(result){
-      $.each(result, function(index, field){
-        $('.pres-events').append(field + ' ');
-      });
+    $('.pres-events h3').empty();
+    $('.pres-events p').empty();
+    $.getJSON('data/events.json', {"date": "2011-10"}, function(data){
+      $('.pres-events h3').append(data[0].titre);
+      $('.pres-events .date').append(data[0].date);
+      $('.pres-events .test').append(data[0].paragraphe[0].text);
+      $('.pres-events .hidden-phone').append(data[0].paragraphe[1].text);
+      $('.slidesjs-navigation').data('iterate', 52);
+      // $.each(data, function(index, val){
+      //   $('.pres-events h3').append(val + ' ');
+      // });
     });
   });
+
+  function getResults(date) {
+      $.getJSON(url, null, function(results) {
+          searchResults(results, locationType)
+      });
+  }
 
   // slides.js // TODO refactor
   $('#slides-big').slidesjs({
