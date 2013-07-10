@@ -1,7 +1,7 @@
 body {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.6;
 }
 
@@ -73,38 +73,9 @@ section ul {
   margin: 0 auto;
 }
 
-.arrow-next-1 {
-  width: 0;
-  height: 0;
-  margin: 16px auto;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 36px solid #fff;
-  opacity: 0.7;
-}
-
-.arrow-next-2 {
-  width: 0;
-  height: 0;
-  margin: 16px auto 0;
-  padding-bottom: 14px;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  border-top: 36px solid #960018;
-  opacity: 0.7;
-}
-
-.big-icon {
-	height: 140px;
-	width: 140px;
-	margin: 0 auto 40px;
-	background-color: #eee;
-}
-
 /* SECTION INTRO ------------------------------------------------------------ */
 
 #intro {
-  height: 430px;
   background: #960018 url(/img/checkered_pattern.png) repeat;
   color: #eee;
 }
@@ -124,13 +95,17 @@ section ul {
   font-weight: 700;
   font-size: 6.4rem;
   line-height: 0.8;
-  margin: 0 0 40px -8px; /* hack the lettrine 'going right' effect */
+  margin: 0 0 50px -8px; /* hack the lettrine 'going right' effect */
   text-shadow:  0px 1px 0px #999,
                 0px 2px 0px #888,
                 0px 3px 0px #777,
                 0px 4px 0px #666,
                 0px 5px 0px #555,
                 0px 6px 0px #222;
+}
+
+.subtitle {
+  margin-bottom: 130px;
 }
 
 .subtitle p {
@@ -145,9 +120,8 @@ section ul {
 
 /* SECTION PRESENTATION ----------------------------------------------------- */
 
-#presentation,
-#events {
-  height: 470px;
+.presentation-text {
+  margin-top: 20px;
 }
 
 #presentation p,
@@ -161,6 +135,7 @@ section ul {
 #slides-big,
 #slides-expo {
   height: 200px;
+  margin: 40px auto 80px;
 }
 
 #presentation h2,
@@ -307,6 +282,7 @@ section ul {
 .pt-page-3 {          /* vins */
   margin-top: 100px;
   max-width: 510px;
+  padding-left: 55px;
 }
 
 
@@ -326,7 +302,10 @@ section ul {
 
 .pt-trig-top {
   top: 20px;
-  width: 300px;
+  width: 320px;
+  font-size: 1.7rem;
+  color: #fff;
+  text-align: center;
 }
 
 .pt-trig-bottom {
@@ -334,12 +313,11 @@ section ul {
   width: 300px;
 }
 
-.pt-trig-bottom a {
-  margin: 0 auto;
-  padding: 2px 26px 10px;
-}
-
 .pt-touch-button {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 2px 20px 6px;
+  width: 260px;
   height: 40px;
   background-color: #fff;
   color: #960018;
@@ -366,7 +344,6 @@ section ul {
 
 #events {
   width: 100%;
-  height: 470px;
   padding: 10px 0 20px;
 }
 
@@ -544,144 +521,120 @@ footer {
 
 /* Slider -------------------------------------------------- */
 
-/* Prevents slides from flashing */
-#slides-big,
-#slides-expo {
-  display: none;
+/* Rslides */
+
+#presentation-rslides {
+  
+}
+
+#events-rslides {
   position: relative;
+  width: 100%;
+  margin: 8% 0 6% 0;
 }
 
-#slides-big .slidesjs-navigation,
-#slides-expo .slidesjs-navigation{
-  border: none;
-  text-decoration: none;
-  background: url(/img/arrows.png) no-repeat;
-  opacity: 0.5;
-  cursor: pointer;
-  position: absolute;
-  width: 43px;
-  height: 58px;
-  top: 50%;
-  margin-top: -29px;
-  -moz-transition: opacity 0.2s ease;
-  -webkit-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease;
-}
-
-#slides-big .slidesjs-previous,
-#slides-expo .slidesjs-previous {
-  background-position: left top;
-  left: 12px;
-  z-index: 10;
-}
-
-#slides-big .slidesjs-next,
-#slides-expo .slidesjs-next {
-  background-position: right top;
-  right: 12px;
-  z-index: 10;
-}
-
-.slidesjs-pagination {
-  margin: 10px 0 0;
-  float: right;
+.rslides {
+  position: relative;
   list-style: none;
-}
-
-.slidesjs-pagination li {
-  float: left;
-  margin: 0 1px;
-}
-
-.slidesjs-pagination li a {
-  display: block;
-  width: 13px;
-  height: 0;
-  padding-top: 13px;
-  background-image: url(/img/pagination.png);
-  background-position: 0 0;
-  float: left;
   overflow: hidden;
-}
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
 
-.slidesjs-pagination li a.active,
-.slidesjs-pagination li a:hover.active {
-  background-position: 0 -13px
-}
-
-.slidesjs-pagination li a:hover {
-  background-position: 0 -26px
-}
-
-#slides-big a:link,
-#slides-big a:visited {
-  color: #eee
-}
-
-#slides-big a:hover,
-#slides-big a:active {
-  color: #9e2020
-}
-
-#prevArrow {
-  background-position: left top;
-  left: 40px;
-}
-
-#nextArrow {
-  background-position: right top;
-  right: 40px;
-}
-
-#prevArrow,
-#nextArrow {
-  border: none;
-  text-decoration: none;
-  background: url(/img/arrows.png) no-repeat;
-  opacity: 0.5;
-  cursor: pointer;
+.rslides li {
+  -webkit-backface-visibility: hidden;
   position: absolute;
-  width: 43px;
-  height: 58px;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+
+.rslides1_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   top: 50%;
-  margin-top: -29px;
-  -moz-transition: opacity 0.2s ease;
-  -webkit-transition: opacity 0.2s ease;
-  transition: opacity 0.2s ease;
+  left: 0;
+  z-index: 99;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url(/img/themes.gif) no-repeat left top;
+  margin-top: -60px;
+}
+
+.rslides1_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
 }
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 481px) {
+@media (min-width: 480px) {
 
   #content {
     padding-top: 0;
+  }
+
+  .title {
+    padding: 50px 0 1px 0;
+  }
+
+  .subtitle {
+    margin-bottom: 110px;
+  }
+
+  #presentation-rslides,
+  #events-rslides {
+    position: relative;
+    width: 80%;
+    margin: 8% auto 2%;
   }
 
 }
 
 @media (min-width: 600px) {
 
-  #intro,
-  #presentation,
-  #ardoise,
-  #events,
-  #contact {
-    height: 540px;
+  /* #PRESENTATION ---------------------------------------------------------- */
+
+  .presentation-text {
+    width: 80%;
+    margin: 5% auto 0;
+    font-size: 1.2rem;
   }
+
+  /* #ARDOISE --------------------------------------------------------------- */
 
   #ardoise {
     height: 900px;
   }
 
-  #contact .map-phone {
-    margin-top: 0;
+  .pt-trig-top {
+    font-size: 2rem;
   }
 
   .pt-trig-bottom {
-    width: 566px;
-    display: inline-block;
+    width: 620px;
   }
 
   .carte {
@@ -690,11 +643,19 @@ footer {
     color: #fff;
   }
 
+  #contact {
+    height: 540px;
+  }
 
+  #contact .map-phone {
+    margin-top: 0;
+  }
 
 }
 
 @media (min-width: 768px) {
+
+  /* NAVBAR ----------------------------------------------------------------- */
 
   .container.navbar-wrapper {
     margin-bottom: 0;
@@ -712,6 +673,18 @@ footer {
     padding: 11px 10px 0 10px;
   }
 
+  /* #INTRO ----------------------------------------------------------------- */
+
+  .title {
+    padding: 80px 0 1px 0;
+  }
+
+  .subtitle {
+    margin-bottom: 100px;
+  }
+
+  /* #ARDOISE --------------------------------------------------------------- */
+
   #ardoise h2 {
     margin-bottom: 40px;
   }
@@ -725,6 +698,8 @@ footer {
 
 @media (min-width: 1024px) {
 
+  /* NAVBAR ----------------------------------------------------------------- */
+
   .navbar .nav > li > a {
     padding: 8px 8px 12px;
   }
@@ -733,9 +708,15 @@ footer {
     padding: 11px 10px 0 10px;
   }
 
+  /* #INTRO ----------------------------------------------------------------- */
+
   #content h1 {
     font-size: 9.4rem;
-    margin: 140px 0 40px -8px;
+    margin: 140px 0 80px -8px;
+  }
+
+  .title {
+    padding: 20px 0 60px 0;
   }
 
   #presentation,
@@ -761,52 +742,49 @@ footer {
     top: -14px;
   }
 
+
+
   #events h2 span {
     top: -24px;
   }
 
-  .pres {
+  #events-rslides {
+    position: relative;
+    width: 45%;
+    margin: 5% 0 8% 5%;
+  }
+
+  #presentation-rslides {
+
+  }
+
+  .presentation-text {
     width: 50%;
     float: left;
-    margin: 120px auto;
-    font-size: 1.2rem;
+    margin: 7% auto 0;
   }
 
-  #slides-big {
-    height: 480px;
-    padding: 60px 0;
-    margin-right: 40px;
-  }
-
-  .pres-events {
+  .events-text {
     width: 50%;
     float: right;
-    margin: auto;
+    margin: 5% auto 5%;
     font-size: 1.2rem;
   }
 
-  .pres-events h3 {
+  .events-text h3 {
     width: 80%;
-    margin: 46px auto 0;
-    font-size: 1.6rem;
+    margin: 0 auto 0;
+    font-size: 1.8rem;
+    top: -6px;
+    position: relative;
+    line-height: 1;
   }
 
-  .pres-events .date {
+  .events-text .date {
     width: 80%;    
     margin: 0 auto 20px;
     font-size: 1.1rem;
     font-weight: 600;
-  }
-
-  #slides-expo {
-    height: 480px;
-    padding: 60px 0;
-    margin-left: 40px;
-  }
-
-  #slides-big .slidesjs-navigation,
-  #slides-expo .slidesjs-navigation {
-    margin-top: -80px;
   }
 
   #map h2 {
@@ -820,11 +798,6 @@ footer {
   #infos {
     width: 50%;
     float: left;
-  }
-
-  .arrow-next-1,
-  .arrow-next-2 {
-    display: none;
   }
 
   #infos ul {
@@ -849,6 +822,13 @@ footer {
     height: 320px;
   }
 
+}
+
+@media (min-width: 1200px) {
+
+  .presentation-text {
+    margin: 8.5% auto 0;
+  }
 
 
 

@@ -57,38 +57,36 @@
 
   <div id="content">
 
-    <section id="intro" class="text">
-      <div class="title container">
+    <section id="intro">
+      <div class="title">
         <h1>Pierrot Gourmet</h1>
         <div class="subtitle">
           <p>Restaurant</p>
         </div>
       </div>
-      <a href="#cuisine"><div class="arrow-next-1"></div></a>
     </section>
 
     <section id="presentation">
       <h2><span id="cuisine">Cuisine du marché</span></h2>
-      <div class="pres">
+      <div class="presentation-text">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat viverra nisl, vel laoreet elit molestie viverra. Mauris quis pellentesque libero. Cras congue ac nisi eget elementum. Et Bla Bla Bla la la la la.</p>
         <p class="hidden-phone">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat viverra nisl, vel laoreet elit molestie viverra. Mauris quis pellentesque libero. Cras congue ac nisi eget elementum. Donec tempus varius justo, a gravida quam porttitor ut.</p>
       </div>
-      <div id="slides-big">
-        <img src="http://lorempixel.com/300/200/food/1" alt="">
-        <img src="http://lorempixel.com/300/200/food/2" alt="">
-        <img src="http://lorempixel.com/300/200/food/3" alt="">
-        <img src="http://lorempixel.com/300/200/food/4" alt="">
-        <a href="#" class="slidesjs-navigation slidesjs-previous"></a>
-        <a href="#" class="slidesjs-navigation slidesjs-next"></a>
+      <div id="presentation-rslides">
+        <ul class="rslides">
+          <li><img src="http://lorempixel.com/300/200/food/1" alt=""></li>
+          <li><img src="http://lorempixel.com/300/200/food/2" alt=""></li>
+          <li><img src="http://lorempixel.com/300/200/food/3" alt=""></li>
+          <li><img src="http://lorempixel.com/300/200/food/4" alt=""></li>
+        </ul>
       </div>
-      <a href="#carte"><div class="arrow-next-2"></div></a>
     </section>
 
     <section id="ardoise">
       <h2><span id="carte">Notre carte</span></h2>
       <div class="pt-bloc">
         <div class="pt-trig-top">
-          <div id="move" class="iterateEffects pt-touch-button">Notre menu du jour</div>
+          <div id="move" class="iterateEffects">Notre menu du jour</div>
         </div>
         <div id="pt-main" class="pt-perspective">
           <div class="pt-page pt-page-1">
@@ -161,26 +159,24 @@
           <a href="#move" class="iterateEffects pt-touch-button">Voir notre carte du mois</a>
         </div>
       </div>
-      <a href="#dates"><div class="arrow-next-1"></div></a>
     </section>
 
     <section id="events">
       <h2><span id="dates">Nos prochains RDV</span></h2>
-      <div class="pres-events">
+      <div id="events-rslides">
+        <ul class="rslides">
+          <li><img src="http://lorempixel.com/300/200/nightlife/1" alt=""></li>
+          <li><img src="http://lorempixel.com/300/200/nightlife/2" alt=""></li>
+          <li><img src="http://lorempixel.com/300/200/nightlife/3" alt=""></li>
+          <li><img src="http://lorempixel.com/300/200/nightlife/4" alt=""></li>
+        </ul>
+      </div>
+      <div class="events-text">
         <h3>The Cure en concert privé</h3>
         <p class="date">Vendredi 23 aout 2013 - à partir de 20h</p>
         <p class="test">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat viverra nisl, vel laoreet elit molestie viverra. Mauris quis pellentesque libero. Cras congue ac nisi eget elementum. Et Bla Bla Bla la la la la.</p>
         <p class="hidden-phone">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat viverra nisl, vel laoreet elit molestie viverra. Mauris quis pellentesque libero. Cras congue ac nisi eget elementum. Donec tempus varius justo, a gravida quam porttitor ut.</p>
       </div>
-      <div id="slides-expo">
-        <img src="http://lorempixel.com/300/200/nightlife/1" alt="">
-        <img src="http://lorempixel.com/300/200/nightlife/2" alt="">
-        <img src="http://lorempixel.com/300/200/nightlife/3" alt="">
-        <img src="http://lorempixel.com/300/200/nightlife/4" alt="">
-        <a href="#" class="slidesjs-navigation slidesjs-previous"></a>
-        <a href="#" class="slidesjs-navigation slidesjs-next"></a>
-      </div>
-      <a href="#pratique"><div class="arrow-next-2"></div></a>
     </section>
 
     <section id="infos">
@@ -215,7 +211,6 @@
           </span>
         </div>
       </div>
-      <a href="#nous-rejoindre"><div class="arrow-next-1"></div></a>
     </section>
 
     <section id="map">
@@ -239,6 +234,7 @@
   <script src="js/vendor/bootstrap.min.js"></script>
 
   <script src="js/vendor/jquery.slides.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
   <script src="js/jquery.bookblock.js"></script>
   <script src="js/jquery.dlmenu.js"></script>
   <script src="js/pagetransitions.js"></script>

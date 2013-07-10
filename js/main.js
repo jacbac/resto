@@ -37,10 +37,10 @@ $(document).ready(function(){
       });
   }
 
-  // slides.js // TODO refactor
-  $('#slides-big').slidesjs({
+  // slides.js
+  $('#slides-big', '#slides-expo').slidesjs({
     width: 600,
-    height: 420,
+    height: 400,
     navigation: {
       active: false,
       effect: 'fade'
@@ -56,24 +56,19 @@ $(document).ready(function(){
     }
   });
 
-  $('#slides-expo').slidesjs({
-    width: 600,
-    height: 420,
-    navigation: {
-      active: false,
-      effect: 'fade'
-    },
-    pagination: {
-      active: false,
-      effect: 'fade'
-    },
-    effect: {
-      fade: {
-        speed: 800
-    	}
-    }
+  // rslides - http://responsiveslides.com/
+  $(".rslides").responsiveSlides({
+    auto: true,
+    timeout: 10000,
+    speed: 800,
+    nav: true,
+    pager: false,
+    maxwidth: "600",
+    before: function(){},
+    after: function(){}
   });
 
+  // ardoise
   var Page = (function() {
 
     var config = {
