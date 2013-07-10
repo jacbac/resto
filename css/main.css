@@ -578,7 +578,7 @@ footer {
   height: 61px;
   width: 38px;
   background: transparent url(/img/themes.gif) no-repeat left top;
-  margin-top: -60px;
+  margin-top: -35px;
 }
 
 .rslides1_nav.next {
@@ -627,6 +627,7 @@ footer {
 
   #ardoise {
     height: 900px;
+    clear: both;
   }
 
   .pt-trig-top {
@@ -755,7 +756,9 @@ footer {
   }
 
   #presentation-rslides {
-
+    width: 43%;
+    margin: 5% 5% 8% 0;
+    float: right;
   }
 
   .presentation-text {
