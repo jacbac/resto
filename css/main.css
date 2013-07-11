@@ -3,6 +3,8 @@ body {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.6;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -743,18 +745,6 @@ footer {
     top: -14px;
   }
 
-
-
-  #events h2 span {
-    top: -24px;
-  }
-
-  #events-rslides {
-    position: relative;
-    width: 45%;
-    margin: 5% 0 8% 5%;
-  }
-
   #presentation-rslides {
     width: 43%;
     margin: 5% 5% 8% 0;
@@ -767,9 +757,20 @@ footer {
     margin: 7% auto 0;
   }
 
+  /* #EVENTS -----------------------------------------------------------------*/
+
+  #events h2 span {
+    top: -24px;
+  }
+
+  #events-rslides {
+    position: relative;
+    float: left;
+    width: 45%;
+    margin: 5% 0 8% 5%;
+  }
+
   .events-text {
-    width: 50%;
-    float: right;
     margin: 5% auto 5%;
     font-size: 1.2rem;
   }
@@ -789,6 +790,8 @@ footer {
     font-size: 1.1rem;
     font-weight: 600;
   }
+
+  /* #INFOS ------------------------------------------------------------------*/
 
   #map h2 {
     color: #fff;
