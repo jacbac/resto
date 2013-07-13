@@ -29,7 +29,6 @@ a:focus {
 
 .navbar .nav {
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 600;
   font-size: 1.1em;
   text-transform: uppercase;
   margin: 0 10px 0 30px;
@@ -83,7 +82,7 @@ section ul {
 }
 
 .title {
-  padding: 50px 0 20px 0;
+  padding: 70px 0 20px 0;
 }
 
 #content h1,
@@ -164,7 +163,7 @@ section ul {
 
 #ardoise {
   width: 100%;
-  height: 800px;
+  height: 860px;
   background: #960018 url(/img/checkered_pattern.png) repeat;
   margin: 30px auto 0;
 }
@@ -317,7 +316,7 @@ section ul {
 
 .pt-touch-button {
   display: inline-block;
-  margin: 0 auto;
+  margin: 0 auto 20px 0;
   padding: 2px 20px 6px;
   width: 260px;
   height: 40px;
@@ -325,7 +324,6 @@ section ul {
   color: #960018;
   text-align: center;
   font-size: 1.4rem;
-  font-weight: 600;
   border:1px solid #960019;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
@@ -365,10 +363,26 @@ section ul {
   top: -20px;
 }
 
+.events-text {
+  margin-bottom: 60px;
+}
+
+.events-text h3 {
+  width: 80%;
+  margin: 0 auto 10px;
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+#events .events-text p.date {
+  text-align: center;
+  width: 50%;
+}
+
 /* INFOS -------------------------------------------------------------------- */
 
 #infos {
-  height: 470px;
   background: #960018 url(/img/checkered_pattern.png) repeat;
   color: #fff;
 }
@@ -408,8 +422,7 @@ section ul {
 
 #info {
   width: 90%;
-  margin: 0 auto;
-  padding-top: 24px;
+  margin: 40px auto 60px;
 }
 
 #contact ul {
@@ -431,17 +444,14 @@ section ul {
 }
 
 .adr {
-  font-weight: 600;
   margin-bottom: 20px;
 }
 
 .calls {
-  font-weight: 600;
   margin-bottom: 20px;
 }
 
 .socials {
-  font-weight: 600;
   margin-bottom: 20px;
 }
 
@@ -472,12 +482,8 @@ section ul {
   display: none;
 }
 
-#map {
-  height: 450px;
-}
-
 .map {
-  width: 86%;
+  width: 70%;
   max-width: 600px;
   margin: 60px auto;
   color: #222;
@@ -526,7 +532,7 @@ footer {
 /* Rslides */
 
 #presentation-rslides {
-  
+  margin-bottom: 60px;
 }
 
 #events-rslides {
@@ -570,20 +576,40 @@ footer {
 .rslides1_nav {
   position: absolute;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  top: 50%;
   left: 0;
   z-index: 99;
-  opacity: 0.7;
+  opacity: 0.4;
   text-indent: -9999px;
   overflow: hidden;
   text-decoration: none;
   height: 61px;
   width: 38px;
   background: transparent url(/img/themes.gif) no-repeat left top;
-  margin-top: -35px;
+  margin-top: -138px;
+}
+
+.rslides2_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  left: 0;
+  z-index: 99;
+  opacity: 0.4;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url(/img/themes.gif) no-repeat left top;
+  margin-top: -138px;
 }
 
 .rslides1_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+}
+
+.rslides2_nav.next {
   left: auto;
   background-position: right top;
   right: 0;
@@ -599,7 +625,7 @@ footer {
   }
 
   .title {
-    padding: 50px 0 1px 0;
+    padding: 60px 0 1px 0;
   }
 
   .subtitle {
@@ -610,7 +636,26 @@ footer {
   #events-rslides {
     position: relative;
     width: 80%;
+  }
+
+  #presentation-rslides {
+    margin: 30px auto 60px;
+  }
+
+  .rslides1_nav {
+    margin-top: -190px;
+  }
+
+  #events-rslides {
     margin: 8% auto 2%;
+  }
+
+  .rslides2_nav {
+    margin-top: -190px;
+  }
+
+  #events .events-text p.date {
+    width: 80%;
   }
 
 }
@@ -618,10 +663,11 @@ footer {
 @media (min-width: 600px) {
 
   /* #PRESENTATION ---------------------------------------------------------- */
-
+  
+  .events-text,
   .presentation-text {
     width: 80%;
-    margin: 5% auto 0;
+    margin: 40px auto 60px;
     font-size: 1.2rem;
   }
 
@@ -697,9 +743,36 @@ footer {
     margin: 40px auto 0;
   }
 
+  /* #EVENTS -----------------------------------------------------------------*/
+
+  #presentation-rslides,
+  #events-rslides {
+    width: 78%;
+  }
+
+  #presentation-rslides {
+    margin: 30px auto 80px;
+  }
+
+  #events-rslides {
+    margin: 60px auto 40px;
+  }
+
+  .rslides1_nav {
+    margin-top: -224px;
+  }
+
+  .rslides2_nav {
+    margin-top: -224px;
+  }
+
 }
 
 @media (min-width: 1024px) {
+
+  #content {
+    padding-bottom: 10%;
+  }
 
   /* NAVBAR ----------------------------------------------------------------- */
 
@@ -751,6 +824,14 @@ footer {
     float: right;
   }
 
+  .rslides1_nav {
+    margin-top: -176px;
+  }
+
+  .rslides2_nav {
+    margin-top: -176px;
+  }
+
   .presentation-text {
     width: 50%;
     float: left;
@@ -764,14 +845,19 @@ footer {
   }
 
   #events-rslides {
-    position: relative;
     float: left;
-    width: 45%;
+    width: 43%;
     margin: 5% 0 8% 5%;
   }
 
+  .rslides2_nav {
+    margin-top: -196px;
+  }
+
   .events-text {
-    margin: 5% auto 5%;
+    width: 50%;
+    float: right;    
+    margin: 5% auto 8%;
     font-size: 1.2rem;
   }
 
@@ -782,13 +868,14 @@ footer {
     top: -6px;
     position: relative;
     line-height: 1;
+    text-align: justify;
   }
 
-  .events-text .date {
+  #events .events-text p.date {
     width: 80%;    
     margin: 0 auto 20px;
     font-size: 1.1rem;
-    font-weight: 600;
+    text-align: justify;
   }
 
   /* #INFOS ------------------------------------------------------------------*/
@@ -802,6 +889,7 @@ footer {
   }
 
   #infos {
+    clear: both;
     width: 50%;
     float: left;
   }
@@ -828,6 +916,10 @@ footer {
     height: 320px;
   }
 
+  footer {
+    clear: both;
+  }
+
 }
 
 @media (min-width: 1200px) {
@@ -836,8 +928,27 @@ footer {
     margin: 8.5% auto 0;
   }
 
+  .rslides1_nav {
+    top: 50%;
+    margin-top: -45px;
+  }
 
+  .rslides2_nav {
+    margin-top: -200px;
+  }
 
-
+  #events p.caption {
+    width: 100%;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    text-align: center;
+    background: #000;
+    background: rgba(0,0,0, .8);
+    color: #fff;
+  }
 
 }

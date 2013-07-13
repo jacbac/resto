@@ -19,15 +19,11 @@ $(document).ready(function(){
   $('.slidesjs-navigation').click(function(){
     $('.pres-events h3').empty();
     $('.pres-events p').empty();
-    $.getJSON('data/events.json', {"date": "2011-10"}, function(data){
+    $.getJSON('data/events.json', function(data){
       $('.pres-events h3').append(data[0].titre);
       $('.pres-events .date').append(data[0].date);
       $('.pres-events .test').append(data[0].paragraphe[0].text);
       $('.pres-events .hidden-phone').append(data[0].paragraphe[1].text);
-      $('.slidesjs-navigation').data('iterate', 52);
-      // $.each(data, function(index, val){
-      //   $('.pres-events h3').append(val + ' ');
-      // });
     });
   });
 
@@ -37,35 +33,37 @@ $(document).ready(function(){
       });
   }
 
-  // slides.js
-  $('#slides-big', '#slides-expo').slidesjs({
-    width: 600,
-    height: 400,
-    navigation: {
-      active: false,
-      effect: 'fade'
-    },
-    pagination: {
-      active: false,
-      effect: 'fade'
-    },
-    effect: {
-      fade: {
-        speed: 800
-    	}
-    }
-  });
-
   // rslides - http://responsiveslides.com/
-  $(".rslides").responsiveSlides({
+  $('#presentation-rslides .rslides').responsiveSlides({
     auto: true,
     timeout: 10000,
     speed: 800,
     nav: true,
-    pager: false,
-    maxwidth: "600",
-    before: function(){},
-    after: function(){}
+    maxwidth: '600',
+  });
+
+  $('#events-rslides .rslides').responsiveSlides({
+    auto: false,
+    timeout: 5000,
+    speed: 500,
+    nav: true,
+    maxwidth: '600',
+    before: function(){
+      // image de départ via son id number
+      var num = $('.rslides2_on').attr('id').slice(-1);
+      console.log(num);
+      var i = parseInt(num)+1;
+      $.getJSON('data/events.json', function(data){
+        console.log(data);
+        console.log(i);
+        $('.events-text h3').empty().append(data[i].titre);
+        $('.events-text .date').empty().append(data[i].date);
+        $('.events-text .test').empty().append(data[i].paragraphe[0].text);
+        $('.events-text .hidden-phone').empty().append(data[i].paragraphe[1].text);
+      });
+    },
+    after: function(){
+    }
   });
 
   // ardoise
