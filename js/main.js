@@ -40,14 +40,26 @@ $(document).ready(function(){
   });
 
   // Switch text ardoise // TODO toggle() ?
-  $('.pt-trig-bottom a').click(function () {
-    if($('#move').text() === 'Nos vins du moment') {
-      $('#move').text('Notre menu du moment');
-      $(this).text('Voir nos vins du moment');
+  $('.pt-trig-bottom a').on('click', function () {
+    var self = this;
+    var txt   = self.innerHTML,
+      $move = $('#move');
+
+    if(txt = 'Voir nos vins du moment'){
+      $move.text('Nos vins du moment');
+    } else if(txt = 'Voir notre menu du moment') {
+      $move.text('Notre menu du moment');
     } else {
-      $('#move').text('Nos vins du moment');
-      $(this).text('Voir notre menu du moment');
+      $move.text('Notre carte du mois');
     }
+    if($move.text() === 'Nos vins du moment') {
+      $(self).text('Voir nos vins du moment');
+    } else if($move.text('Notre menu du moment')) {
+      $(self).text('Voir notre menu du moment');
+    } else {
+      $(self).text('Voir notre carte du mois');
+    }
+    
   });
 
   if($(window).width() > 768){
