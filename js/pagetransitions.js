@@ -1,8 +1,11 @@
+/**
+ * https://github.com/codrops/PageTransitions
+ */
 var PageTransitions = (function() {
 
-	var $main = $( '#pt-main' ),
-		$pages = $main.children( 'div.pt-page' ),
-		$iterate = $( '.iterateEffects' ),
+	var $main = $('#pt-main'),
+		$pages = $main.children('div.pt-page'),
+		$iterate = $('.pt-touch-button'),
 		animcursor = 1,
 		pagesCount = $pages.length,
 		current = 0,
@@ -16,32 +19,31 @@ var PageTransitions = (function() {
 			'animation' : 'animationend'
 		},
 		// animation end event name
-		animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ],
+		animEndEventName = animEndEventNames[ Modernizr.prefixed('animation') ],
 		// support css animations
 		support = Modernizr.cssanimations;
 	
 	function init() {
-
-		$pages.each( function() {
+		$pages.each(function() {
 			var $page = $( this );
-			$page.data( 'originalClassList', $page.attr( 'class' ) );
-		} );
+			$page.data('originalClassList', $page.attr('class'));
+		});
 
-		$pages.eq( current ).addClass( 'pt-page-current' );
+		$pages.eq(current).addClass('pt-page-current');
 
-		$( '#dl-menu' ).dlmenu( {
-			animationClasses : { in : 'dl-animate-in-2', out : 'dl-animate-out-2' },
-			onLinkClick : function( el, ev ) {
+		$('#dl-menu').dlmenu({
+			animationClasses : {in:'dl-animate-in-2', out:'dl-animate-out-2'},
+			onLinkClick : function(el,ev) {
 				ev.preventDefault();
-				nextPage( el.data( 'animation' ) );
+				nextPage(el.data('animation'));
 			}
-		} );
+		});
 
-		$iterate.on( 'click', function() {
-			if( isAnimating ) {
+		$iterate.on('click', function() {
+			if(isAnimating ) {
 				return false;
 			}
-			if( animcursor > 67 ) {
+			if(animcursor > 67) {
 				animcursor = 1;
 			}
 			nextPage(32);
@@ -50,28 +52,26 @@ var PageTransitions = (function() {
 
 	}
 
-	function nextPage( animation ) {
-
-		if( isAnimating ) {
+	function nextPage(animation) {
+		if(isAnimating)  {
 			return false;
 		}
 
 		isAnimating = true;
 		
-		var $currPage = $pages.eq( current );
+		var $currPage = $pages.eq(current);
 
-		if( current < pagesCount - 1 ) {
+		if(current < pagesCount - 1) {
 			++current;
 		}
 		else {
 			current = 0;
 		}
 
-		var $nextPage = $pages.eq( current ).addClass( 'pt-page-current' ),
+		var $nextPage = $pages.eq(current).addClass('pt-page-current'),
 			outClass = '', inClass = '';
 
-		switch( animation ) {
-
+		switch(animation) {
 			case 1:
 				outClass = 'pt-page-moveToLeft';
 				inClass = 'pt-page-moveFromRight';
@@ -84,45 +84,44 @@ var PageTransitions = (function() {
 				outClass = 'pt-page-rotateSlideOut';
 				inClass = 'pt-page-rotateSlideIn';
 				break;
-
 		}
 
-		$currPage.addClass( outClass ).on( animEndEventName, function() {
-			$currPage.off( animEndEventName );
+		$currPage.addClass(outClass).on(animEndEventName, function() {
+			$currPage.off(animEndEventName);
 			endCurrPage = true;
-			if( endNextPage ) {
-				onEndAnimation( $currPage, $nextPage );
+			if(endNextPage) {
+				onEndAnimation($currPage, $nextPage);
 			}
-		} );
+		});
 
-		$nextPage.addClass( inClass ).on( animEndEventName, function() {
+		$nextPage.addClass(inClass).on( animEndEventName, function() {
 			$nextPage.off( animEndEventName );
 			endNextPage = true;
-			if( endCurrPage ) {
-				onEndAnimation( $currPage, $nextPage );
+			if(endCurrPage) {
+				onEndAnimation($currPage, $nextPage);
 			}
-		} );
+		});
 
-		if( !support ) {
-			onEndAnimation( $currPage, $nextPage );
+		if(!support) {
+			onEndAnimation($currPage, $nextPage);
 		}
 
 	}
 
-	function onEndAnimation( $outpage, $inpage ) {
+	function onEndAnimation($outpage, $inpage) {
 		endCurrPage = false;
 		endNextPage = false;
 		resetPage( $outpage, $inpage );
 		isAnimating = false;
 	}
 
-	function resetPage( $outpage, $inpage ) {
-		$outpage.attr( 'class', $outpage.data( 'originalClassList' ) );
-		$inpage.attr( 'class', $inpage.data( 'originalClassList' ) + ' pt-page-current' );
+	function resetPage($outpage, $inpage) {
+		$outpage.attr('class', $outpage.data('originalClassList'));
+		$inpage.attr('class', $inpage.data('originalClassList') + 'pt-page-current');
 	}
 
 	init();
 
-	return { init : init };
+	return {init:init};
 
 })();
