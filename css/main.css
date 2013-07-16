@@ -126,7 +126,7 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  text-align: center; 
+  text-align: center;
 }
 
 .navbar-inner > .container > .logo {
@@ -500,6 +500,7 @@ section ul {
 #infos {
   background: #960018 url(/img/checkered_pattern.png) repeat;
   color: #fff;
+  height: 380px;
 }
 
 #infos p {
@@ -570,7 +571,7 @@ section ul {
 .calls a.email {
   text-decoration: none;
   padding-bottom: 1px;
-  border-bottom: 1px solid #eee;  
+  border-bottom: 1px solid #eee;
 }
 
 .socials {
@@ -1128,7 +1129,7 @@ footer {
   }
   .hidden-print {
     display: none !important;
-  }  
+  }
   a,
   a:visited {
     text-decoration: underline;
