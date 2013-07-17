@@ -1,9 +1,40 @@
 /*!
  * Pierrot Gourmet CSS v0.8
  *
+ * With mixed Reset CSS by
+ *   Eric Meyer - http://meyerweb.com/eric/tools/css/reset/
+ *   Bootstrap CSS - 
  * Designed and built by @jacbac
  * Love, Peace & Soul !
  */
+
+html,
+body,
+div,
+span,
+h1, 
+h2, 
+h3,
+p,
+a,
+address,
+img,
+b,
+ul,
+li,
+footer,
+header,
+menu,
+nav,
+section,
+time {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
 article,
 aside,
@@ -12,17 +43,10 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
+menu,
 nav,
 section {
   display: block;
-}
-
-canvas,
-video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
 }
 
 html {
@@ -36,8 +60,6 @@ body {
   font-size: 16px;
   font-weight: 600;
   line-height: 1.6;
-  padding: 0;
-  margin: 0;
   background: #eee url(/img/cream_dust.png) repeat;
 }
 
@@ -58,18 +80,22 @@ a:focus {
   outline-offset: -2px;
 }
 
+a:active {
+  outline: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
 img {
-  width: auto\9;
+  width: auto;
   height: auto;
   max-width: 100%;
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
-}
-
-#map_canvas img,
-.google-maps img {
-  max-width: none;
 }
 
 /* HEADER ------------------------------------------------------------------- */
@@ -200,24 +226,24 @@ section ul {
   padding: 120px 0 20px 0;
 }
 
-#content h1,
+h1,
 .subtitle p {
   font-family: 'Tangerine', cursive;
   text-align: center;
   color: #fff;
 }
 
-#content h1 {
+h1 {
   font-weight: 700;
   font-size: 6.4rem;
   line-height: 0.8;
   margin: 0 0 50px -8px; /* hack the lettrine 'going right' effect */
-  text-shadow:  0px 1px 0px #999,
-                0px 2px 0px #888,
-                0px 3px 0px #777,
-                0px 4px 0px #666,
-                0px 5px 0px #555,
-                0px 6px 0px #222;
+  text-shadow:  0 1px 0 #999,
+                0 2px 0 #888,
+                0 3px 0 #777,
+                0 4px 0 #666,
+                0 5px 0 #555,
+                0 6px 0 #222;
 }
 
 .subtitle {
@@ -228,10 +254,10 @@ section ul {
   font-weight: 700;
   font-size: 3.4rem;
   line-height: 0.9;
-  text-shadow:  0px 1px 0px #999,
-                0px 2px 0px #888,
-                0px 3px 0px #777,
-                0px 4px 0px #222;
+  text-shadow:  0 1px 0 #999,
+                0 2px 0 #888,
+                0 3px 0 #777,
+                0 4px 0 #222;
 }
 
 /* SECTION PRESENTATION ----------------------------------------------------- */
@@ -273,6 +299,11 @@ section ul {
   background: #960018 url(/img/cream_dust.png) repeat;
   padding: 0 20px;
   position: relative;
+  font-weight: 700;
+}
+
+#presentation h2 span,
+#map h2 span {
   top: -8px;
 }
 
@@ -299,6 +330,7 @@ section ul {
   padding: 0 20px;
   position: relative;
   top: -8px;
+  font-weight: 700;
 }
 
 #ardoise a .arrow-next-1 {
@@ -371,7 +403,7 @@ section ul {
 
 .pt-page {
   position: absolute;
-  top: 0px;
+  top: 0;
   width: 100%;
   visibility: hidden;
   overflow: hidden;
@@ -402,8 +434,6 @@ section ul {
   max-width: 510px;
   padding-left: 55px;
 }
-
-
 
 .pt-trig-top,
 .pt-trig-bottom {
@@ -454,6 +484,7 @@ section ul {
   color: #960018;
   font-weight: bold;
   -webkit-box-shadow: inset 1px 1px 3px 1px rgba(50, 0, 0, 0.8);
+     -moz-box-shadow: inset 1px 1px 3px 1px rgba(50, 0, 0, 0.8);
           box-shadow: inset 1px 1px 3px 1px rgba(50, 0, 0, 0.8);
 }
 
@@ -474,9 +505,6 @@ section ul {
 }
 
 #events h2 span {
-  background: #960018 url(/img/cream_dust.png) repeat;
-  padding: 0 20px;
-  position: relative;
   top: -20px;
 }
 
@@ -526,6 +554,7 @@ section ul {
   padding: 0 20px;
   position: relative;
   top: -8px;
+  font-weight: 700;
 }
 
 #infos ul {
@@ -556,7 +585,7 @@ section ul {
 .adr li.name {
   font-family: 'Tangerine', cursive;
   font-size: 2.4rem;
-  text-shadow: 0px 1px 0px #444, 0px 2px 0px #222;
+  text-shadow: 0 1px 0 #444, 0 2px 0 #222;
   padding: 0 0 20px;
   font-weight: 700;
   text-align: center;
@@ -572,7 +601,7 @@ section ul {
   margin-bottom: 20px;
 }
 
-.calls li:first-of-type {
+.calls li:first-child {
   font-size: 1.6rem;
   font-weight: 700;
 }
