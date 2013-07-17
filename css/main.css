@@ -500,7 +500,7 @@ section ul {
 #infos {
   background: #960018 url(/img/checkered_pattern.png) repeat;
   color: #fff;
-  height: 380px;
+  height: 410px;
 }
 
 #infos p {
@@ -575,7 +575,11 @@ section ul {
 }
 
 .socials {
-  margin-bottom: 20px;
+  text-align: center;
+}
+
+.socials li {
+  display: inline-block;
 }
 
 .hours {
@@ -1067,7 +1071,7 @@ footer {
   }
 
   .access {
-    width: 70%;
+    width: 100%;
     max-width: 600px;
     margin: 40px auto;
     font-size: 1.3rem;
