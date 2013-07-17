@@ -1178,6 +1178,20 @@ footer {
 
 }
 
+@media (min-width: 1600px) {
+
+  #infos {
+    padding-left: 10%;
+    width: 40%;
+  }
+
+  #map {
+    padding-right: 10%;
+    width: 40%;
+  }
+
+}
+
 @media print {
   * {
     color: #000 !important;
