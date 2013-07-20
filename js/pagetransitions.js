@@ -6,7 +6,6 @@ var PageTransitions = (function() {
 	var $main = $('#pt-main'),
 		$pages = $main.children('div.pt-page'),
 		$iterate = $('.pt-touch-button'),
-		animcursor = 1,
 		pagesCount = $pages.length,
 		current = 0,
 		isAnimating = false,
@@ -25,42 +24,27 @@ var PageTransitions = (function() {
 	
 	function init() {
 		$pages.each(function() {
-			var $page = $( this );
+			var $page = $(this);
 			$page.data('originalClassList', $page.attr('class'));
 		});
 
 		$pages.eq(current).addClass('pt-page-current');
 
-		$('#dl-menu').dlmenu({
-			animationClasses : {in:'dl-animate-in-2', out:'dl-animate-out-2'},
-			onLinkClick : function(el,ev) {
-				ev.preventDefault();
-				nextPage(el.data('animation'));
-			}
-		});
-
 		$iterate.on('click', function() {
 			if(isAnimating ) {
 				return false;
 			}
-			if(animcursor > 67) {
-				animcursor = 1;
-			}
-			nextPage(32);
-			++animcursor;
+			nextPage();
 		} );
-
 	}
 
-	function nextPage(animation) {
+	function nextPage() {
 		if(isAnimating)  {
 			return false;
 		}
-
 		isAnimating = true;
 		
 		var $currPage = $pages.eq(current);
-
 		if(current < pagesCount - 1) {
 			++current;
 		}
@@ -69,22 +53,8 @@ var PageTransitions = (function() {
 		}
 
 		var $nextPage = $pages.eq(current).addClass('pt-page-current'),
-			outClass = '', inClass = '';
-
-		switch(animation) {
-			case 1:
-				outClass = 'pt-page-moveToLeft';
-				inClass = 'pt-page-moveFromRight';
-				break;
-			case 32:
-				outClass = 'pt-page-flipOutRight';
-				inClass = 'pt-page-flipInLeft pt-page-delay500';
-				break;
-			case 67:
-				outClass = 'pt-page-rotateSlideOut';
-				inClass = 'pt-page-rotateSlideIn';
-				break;
-		}
+			outClass = 'pt-page-flipOutRight',
+			inClass = 'pt-page-flipInLeft pt-page-delay500';
 
 		$currPage.addClass(outClass).on(animEndEventName, function() {
 			$currPage.off(animEndEventName);
@@ -94,8 +64,8 @@ var PageTransitions = (function() {
 			}
 		});
 
-		$nextPage.addClass(inClass).on( animEndEventName, function() {
-			$nextPage.off( animEndEventName );
+		$nextPage.addClass(inClass).on(animEndEventName, function() {
+			$nextPage.off(animEndEventName);
 			endNextPage = true;
 			if(endCurrPage) {
 				onEndAnimation($currPage, $nextPage);
@@ -105,19 +75,18 @@ var PageTransitions = (function() {
 		if(!support) {
 			onEndAnimation($currPage, $nextPage);
 		}
-
 	}
 
 	function onEndAnimation($outpage, $inpage) {
 		endCurrPage = false;
 		endNextPage = false;
-		resetPage( $outpage, $inpage );
+		resetPage($outpage, $inpage);
 		isAnimating = false;
 	}
 
 	function resetPage($outpage, $inpage) {
 		$outpage.attr('class', $outpage.data('originalClassList'));
-		$inpage.attr('class', $inpage.data('originalClassList') + 'pt-page-current');
+		$inpage.attr('class', $inpage.data('originalClassList') + ' pt-page-current');
 	}
 
 	init();
