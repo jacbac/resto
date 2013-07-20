@@ -39,32 +39,37 @@ $(document).ready(function(){
     }
   });
 
-  // Switch text ardoise // TODO toggle() ?
+  // Switch du text titre/btn ardoise
   $('.pt-trig-bottom a').on('click', function () {
-    var self = this;
-    var txt   = self.innerHTML,
-      $move = $('#move');
+    var $oldTitre = $('#move'),
+      $this = $(this);
 
-    if(txt = 'Voir nos vins du moment'){
-      $move.text('Nos vins du moment');
-    } else if(txt = 'Voir notre menu du moment') {
-      $move.text('Notre menu du moment');
-    } else {
-      $move.text('Notre carte du mois');
+    switch(this.innerHTML) {
+      case 'Voir notre menu du moment':
+        updateBtn($oldTitre.text(), $this);
+        $oldTitre.text('Notre menu du moment');
+        break;
+      case 'Voir nos vins du moment':
+        updateBtn($oldTitre.text(), $this);
+        $oldTitre.text('Nos vins du moment');
+        break;
+      case 'Voir notre carte du mois':
+        updateBtn($oldTitre.text(), $this);
+        $oldTitre.text('Notre carte du mois');
+        break;
     }
-    if($move.text() === 'Nos vins du moment') {
-      $(self).text('Voir nos vins du moment');
-    } else if($move.text('Notre menu du moment')) {
-      $(self).text('Voir notre menu du moment');
-    } else {
-      $(self).text('Voir notre carte du mois');
+
+    function updateBtn(oldTitre, btn) {
+      if(oldTitre === 'Nos vins du moment') {
+        btn.text('Voir nos vins du moment');
+      } else if(oldTitre === 'Notre menu du moment') {
+        btn.text('Voir notre menu du moment');
+      } else {
+        btn.text('Voir notre carte du mois');
+      }
     }
     
   });
-
-  if($(window).width() > 768){
-    $('.pt-trig-bottom .pt-touch-button').attr('href', '#carte');
-  }
 
   /**
    * Google Map API v3
