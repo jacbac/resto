@@ -333,9 +333,10 @@ h1 {
   font-weight: 700;
 }
 
-#ardoise a .arrow-next-1 {
-  position: relative;
-  top: 560px;
+#ardoise-rslides {
+  width: 640px;
+  height: 460px;
+  margin: 0 auto;
 }
 
 .carte {
@@ -366,6 +367,7 @@ h1 {
   line-height: 1.2;
 }
 
+/*TODO rename class ======================================= */
 .pt-page-1 li {
   margin-bottom: 10px;
 }
@@ -378,86 +380,20 @@ h1 {
   float: right;
 }
 
-#dl-menu button {
-  width: 200px;
-  height: 60px;
-  margin: 0 20px 0;
-}
-
-/* Page Transition -------------------------- */
-
-.pt-bloc {
-  position: relative;
-}
-
-.pt-perspective {
-  position: relative;
-  height: 140px;
-  -webkit-perspective: 1200px;
-     -moz-perspective: 1200px;
-          perspective: 1200px;
-  -webkit-transform-style: preserve-3d;
-     -moz-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-.pt-page {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  visibility: hidden;
-  overflow: hidden;
-  -webkit-backface-visibility: hidden;
-     -moz-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-     -moz-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
-.pt-page-current, .no-js .pt-page {
-  visibility: visible;
-}
-
-.pt-page-1 {          /* menu du jour */
-  margin-top: 150px;
-  max-width: 680px;
-}
-
-.pt-page-2 {          /* menu du mois */
-  margin-top: 110px;
-  max-width: 680px;
-}
-
-.pt-page-3 {          /* vins */
-  margin-top: 100px;
-  max-width: 510px;
-  padding-left: 55px;
-}
-
-.pt-trig-top,
 .pt-trig-bottom {
-  position: absolute;
-  z-index: 10;
-  left: 50%;
-  height: 40px;
-  -webkit-transform: translateX(-50%);
-     -moz-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  cursor: pointer;
+  margin: 40px auto;
 }
 
-.pt-trig-top {
-  top: 20px;
-  width: 320px;
+#move {
+  margin-bottom: 40px;
   font-size: 1.7rem;
   color: #fff;
   text-align: center;
 }
 
+/*TODO rename class ======================================= */
+
 .pt-trig-bottom {
-  bottom: -560px;
   width: 300px;
 }
 
@@ -732,7 +668,7 @@ footer {
   margin: 0;
   }
 
-.rslides li {
+.rslides > li {
   -webkit-backface-visibility: hidden;
   position: absolute;
   display: none;
@@ -741,7 +677,7 @@ footer {
   top: 0;
   }
 
-.rslides li:first-child {
+.rslides > li:first-child {
   position: relative;
   display: block;
   float: left;

@@ -13,12 +13,12 @@ var PageTransitions = (function() {
     endNextPage = false,
     animEndEventNames = {
       'WebkitAnimation' : 'webkitAnimationEnd',
-      'OAnimation' : 'oAnimationEnd',
+      'OAnimation'  : 'oAnimationEnd',
       'msAnimation' : 'MSAnimationEnd',
-      'animation' : 'animationend'
+      'animation'   : 'animationend'
     },
     // animation end event name
-    animEndEventName = animEndEventNames[ Modernizr.prefixed('animation') ],
+    animEndEventName = animEndEventNames[Modernizr.prefixed('animation')],
     // support css animations
     support = Modernizr.cssanimations;
   
@@ -31,10 +31,10 @@ var PageTransitions = (function() {
     $pages.eq(current).addClass('pt-page-current');
 
     $btn.on('click', function() {
-      if(isAnimating ) {
+      if(isAnimating) {
         return false;
       }
-      var $txt = $(this).txt();
+      var $txt = $(this).text();
       switch($txt) {
         case 'Voir notre menu du moment':
           nextPage(1);
@@ -46,10 +46,12 @@ var PageTransitions = (function() {
           nextPage(3);
           break;
       }
-    } );
+    });
   }
 
   function nextPage(num) {
+    console.log($('pt-page-' + num));
+    
     if(isAnimating)  {
       return false;
     }
@@ -63,7 +65,7 @@ var PageTransitions = (function() {
       current = 0;
     }
 
-    var $nextPage = $pages.eq(current).addClass('pt-page-current'),
+    var $nextPage = $('pt-page-' + num).addClass('pt-page-current'),
       outClass = 'pt-page-flipOutRight',
       inClass = 'pt-page-flipInLeft pt-page-delay500';
 

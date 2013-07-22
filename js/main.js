@@ -21,6 +21,13 @@ $(document).ready(function(){
     maxwidth: '600'
   });
 
+  $('#ardoise-rslides .rslides').responsiveSlides({
+    auto: true,
+    timeout: 10000,
+    speed: 800,
+    maxwidth: '800'
+  });
+
   $('#events-rslides .rslides').responsiveSlides({
     auto: false,
     timeout: 5000,

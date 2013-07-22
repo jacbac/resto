@@ -9,7 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>Pierrot Gourmet - Votre restaurant à Nantes - Cuisine du marché</title>
   <meta name="description" content="Pierrot Gourmet" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width" />
 
   <link href='http://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css' />
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600,700' rel='stylesheet' type='text/css' />
@@ -81,10 +81,12 @@
 
     <section id="ardoise">
       <h2><span id="carte">Notre carte</span></h2>
-      <div id="move">Notre menu du jour</div>
-      <div id="ardoise-rslides">
-        <ul class="rslides">
-          <li>
+      <div class="pt-bloc">
+        <div class="pt-trig-top">
+          <div id="move">Notre menu du jour</div>
+        </div>
+        <div id="pt-main" class="pt-perspective">
+          <div class="pt-page pt-page-1">
             <div class="carte">
               <h3>Entrées</h3>
               <ul>
@@ -100,8 +102,8 @@
                 <li>Riz au lait, framboises écrasées</li>
               </ul>
             </div>
-          </li>
-          <li>
+          </div>
+          <div class="pt-page pt-page-2">
             <div class="carte">
               <h3>Entrées</h3>
               <ul>
@@ -121,9 +123,9 @@
                 <li>Croustillant de chocolat noir et sa crème anglaise chicorée</li>
                 <li>Pêche pochée au gingembre confit, sablé de noix de pécan</li>
               </ul>
-            </div>              
-          </li>
-          <li>
+            </div>
+          </div>
+          <div class="pt-page pt-page-3">
             <div class="carte">
               <h3>Blancs</h3>
               <ul class="wine">
@@ -146,14 +148,13 @@
               <ul class="wine">
                 <li>Costières de Nimes - Les Sarments de la Tuilerie <span class="millesime">2011</span></li>
               </ul>
-            </div>              
-          </li>
-        </ul>
-      </div>
-
-      <div class="pt-trig-bottom">
-        <a href="#move" class="pt-touch-button first">Voir nos vins du moment</a>
-        <a href="#move" class="pt-touch-button last">Voir notre carte du mois</a>
+            </div>
+          </div>
+        </div>
+        <div class="pt-trig-bottom">
+          <a href="#move" class="pt-touch-button first">Voir nos vins du moment</a>
+          <a href="#move" class="pt-touch-button last">Voir notre carte du mois</a>
+        </div>
       </div>
     </section>
 
@@ -255,11 +256,11 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
 
-  <script src="js/modernizr.custom.js"></script>
   <script src="js/responsiveslides.min.js"></script>
   <script src="js/bootstrap-collapse.js"></script>
   <script src="js/jquery.scrollTo.min.js"></script>
   <script src="js/jquery.localScroll.min.js"></script>
+  <script src="js/modernizr.custom.js"></script>
   <script src="js/hisrc.min.js"></script>
   <script src="js/jquery.dlmenu.min.js"></script>
   <script src="js/pagetransitions.js"></script>
