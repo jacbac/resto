@@ -334,7 +334,7 @@ h1 {
 }
 
 #ardoise-rslides {
-  width: 640px;
+  max-width: 640px;
   height: 460px;
   margin: 0 auto;
 }
@@ -365,6 +365,7 @@ h1 {
 
 .carte li {
   line-height: 1.2;
+  margin-bottom: 20px;
 }
 
 /*TODO rename class ======================================= */
@@ -882,6 +883,10 @@ footer {
   #pt-main {
     max-width: 640px;
     margin: 40px auto 0;
+  }
+
+  .carte li {
+    margin-bottom: 12px;
   }
 
   /* #EVENTS -----------------------------------------------------------------*/
