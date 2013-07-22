@@ -3,7 +3,7 @@
  *
  * With mixed Reset CSS by
  *   Eric Meyer - http://meyerweb.com/eric/tools/css/reset/
- *   Bootstrap CSS - 
+ *   Bootstrap CSS -
  * Designed and built by @jacbac
  * Love, Peace & Soul !
  */
@@ -12,8 +12,8 @@ html,
 body,
 div,
 span,
-h1, 
-h2, 
+h1,
+h2,
 h3,
 p,
 a,
@@ -399,7 +399,7 @@ h1 {
 
 .pt-touch-button {
   display: inline-block;
-  margin: 0 auto 20px 0;
+  margin: 20px auto 0;
   padding: 2px 20px 6px;
   width: 260px;
   height: 40px;
@@ -809,7 +809,12 @@ footer {
   }
 
   .pt-trig-bottom {
-    width: 620px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .pt-touch-button {
+    margin: 0 10px 20px 10px;
   }
 
   .carte {
