@@ -13,10 +13,9 @@
 
   <link href='http://fonts.googleapis.com/css?family=Tangerine:700' rel='stylesheet' type='text/css' />
   <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:600,700' rel='stylesheet' type='text/css' />
-
-  <link rel="stylesheet" href="css/animations.css" />
   <link rel="stylesheet" href="css/main.css" />
 
+  <script src="js/modernizr.custom.js"></script>
   <!--[if lt IE 8]>
       <p class="chromeframe">Vous utilisez un navigateur <strong>obsolète</strong>. Merci de <a href="http://browsehappy.com/">mettre à jour votre navigateur</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">d'activer Google Chrome Frame</a> pour améliorer votre navigation.</p>
   <![endif]-->
@@ -30,11 +29,11 @@
         <a class="nav-btn" data-toggle="collapse" data-target=".nav-collapse">Menu</a>
         <div class="nav-collapse collapse">
           <ul class="nav">
-            <li><a href="#cuisine">Cuisine du marché</a></li>
-            <li><a href="#carte">Notre carte</a></li>
+            <li><a href="#presentation">Cuisine du marché</a></li>
+            <li><a href="#ardoise">Notre carte</a></li>
             <li><a class="logo hidden-phone" href="#">Pierrot Gourmet</a></li>
-            <li><a href="#dates">Nos prochains rdv</a></li>
-            <li><a href="#pratique">Nous contacter</a></li>
+            <li><a href="#events">Nos prochains rdv</a></li>
+            <li><a href="#infos">Nous contacter</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -53,7 +52,7 @@
     </section>
 
     <section id="presentation">
-      <h2><span id="cuisine">Cuisine du marché</span></h2>
+      <h2><span>Cuisine du marché</span></h2>
       <div class="presentation-text">
         <h3>Pierrot Gourmet vous accueille et vous propose ...</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut volutpat viverra nisl, vel laoreet elit molestie viverra. Mauris quis pellentesque libero. Cras congue ac nisi eget elementum. Et Bla Bla Bla la la la la.</p>
@@ -80,7 +79,7 @@
     </section>
 
     <section id="ardoise">
-      <h2><span id="carte">Notre carte</span></h2>
+      <h2><span>Notre carte</span></h2>
       <div id="move">Notre menu du jour</div>
       <div id="ardoise-rslides">
         <ul class="rslides">
@@ -150,7 +149,6 @@
           </li>
         </ul>
       </div>
-
       <div class="bottom-btn">
         <a href="#move" class="btn first">Voir nos vins du moment</a>
         <a href="#move" class="btn last">Voir notre carte du mois</a>
@@ -158,7 +156,7 @@
     </section>
 
     <section id="events">
-      <h2><span id="dates">Nos prochains RDV</span></h2>
+      <h2><span>Nos prochains RDV</span></h2>
       <div id="events-rslides">
         <div class="hisrc">
           <ul class="rslides">
@@ -186,7 +184,7 @@
     </section>
 
     <section id="infos">
-      <h2><span id="pratique">Infos pratiques</span></h2>
+      <h2><span>Infos pratiques</span></h2>
       <div id="info">
         <ul class="adr" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
           <li class="name" itemprop="name">Pierrot Gourmet</li>
@@ -229,7 +227,7 @@
     </section>
 
     <section id="map">
-      <h2><span id="nous-rejoindre">Nous rejoindre</span></h2>
+      <h2><span>Nous rejoindre</span></h2>
       <ul class="access">
         <li>
           <span><img src="img/transport/parkinggarage.png" width="37" height="37"/></span>Parking place Viarme gratuit entre 12h-14h et le soir après 19h
@@ -255,14 +253,9 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
 
-  <script src="js/modernizr.custom.js"></script>
   <script src="js/responsiveslides.min.js"></script>
   <script src="js/bootstrap-collapse.js"></script>
-  <script src="js/jquery.scrollTo.min.js"></script>
-  <script src="js/jquery.localScroll.min.js"></script>
   <script src="js/hisrc.min.js"></script>
-  <script src="js/jquery.dlmenu.min.js"></script>
-  <script src="js/pagetransitions.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsYVD-Nocke8NkyXK0KEKYESXlQump6Kk&amp;sensor=false"></script>
   <script>
   //   var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

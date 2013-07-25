@@ -1,9 +1,18 @@
 $(document).ready(function(){
 
   /**
-   * Local Scroll @ http://flesler.blogspot.fr/2007/10/jquerylocalscroll-10.html
+   * Smooth Scroll
    */  
-  $.localScroll();
+  $('.nav li a').click(function() {
+    var size = $(document).width(),
+      minus = 100,
+      href = $(this).attr('href');
+    if(size < 768)
+      minus = 80;
+     $('html, body').animate( {
+        scrollTop: $(href).offset().top - minus
+     }, 1200);    
+  });
 
   /**
    * Hisrc @ https://github.com/teleject/hisrc
@@ -25,7 +34,10 @@ $(document).ready(function(){
     auto: true,
     timeout: 10000,
     speed: 800,
-    maxwidth: '800'
+    maxwidth: '800',
+    before: function(){
+
+    }
   });
 
   $('#events-rslides .rslides').responsiveSlides({

@@ -311,7 +311,7 @@ h1 {
 
 #ardoise {
   width: 100%;
-  height: 860px;
+  height: 1200px;
   background: #960018 url(/img/checkered_pattern.png) repeat;
   margin: 30px auto 0;
 }
@@ -335,7 +335,7 @@ h1 {
 
 #ardoise-rslides {
   max-width: 640px;
-  height: 460px;
+  height: 780px;;
   margin: 0 auto;
 }
 
@@ -368,15 +368,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-/*TODO rename class ======================================= */
-.pt-page-1 li {
-  margin-bottom: 10px;
-}
-
-.pt-page-2 li {
-  margin-bottom: 4px;
-}
-
 .carte li span {
   float: right;
 }
@@ -389,13 +380,8 @@ h1 {
 }
 
 .bottom-btn {
-  margin: 40px auto;
-}
-
-/*TODO rename class ======================================= */
-
-.bottom-btn {
   width: 300px;
+  margin: 40px auto;
 }
 
 .btn {
@@ -470,13 +456,6 @@ h1 {
   height: 580px;
 }
 
-#infos p {
-  width: 80%;
-  margin: 0 auto 20px;
-  text-align: justify;
-  color: #fff;
-}
-
 #infos h2 {
   font-size: 1.2rem;
   line-height: 0.6;
@@ -500,18 +479,9 @@ h1 {
 
 /* ------------------ */
 
-#contact {
-	margin-top: 60px;
-}
-
 #info {
   width: 90%;
   margin: 40px auto 60px;
-}
-
-#contact ul {
-  font-size: 1.4rem;
-  text-align: center;
 }
 
 #info ul li {
@@ -579,13 +549,6 @@ h1 {
   display: block;
 }
 
-#contact .map-phone {
-  width: 100%;
-  height: 580px;
-  background: #fff url(/img/cream_dust.png) repeat;
-  padding: 10px 0 20px;
-}
-
 .geo {
   display: none;
 }
@@ -635,10 +598,6 @@ footer {
   font-size: 1.2rem;
 }
 
-#signature p {
-  margin: 0;
-}
-
 #signature a {
   color: #eee;
   text-decoration: none;
@@ -662,12 +621,11 @@ footer {
 
 .rslides {
   position: relative;
-  list-style: none;
   overflow: hidden;
   width: 100%;
   padding: 0;
   margin: 0;
-  }
+}
 
 .rslides > li {
   -webkit-backface-visibility: hidden;
@@ -676,13 +634,13 @@ footer {
   width: 100%;
   left: 0;
   top: 0;
-  }
+}
 
 .rslides > li:first-child {
   position: relative;
   display: block;
   float: left;
-  }
+}
 
 .rslides img {
   display: block;
@@ -690,7 +648,7 @@ footer {
   float: left;
   width: 100%;
   border: 0;
-  }
+}
 
 .rslides1_nav {
   position: absolute;
@@ -765,6 +723,14 @@ footer {
     margin-top: -190px;
   }
 
+  #ardoise {
+    height: 1100px;
+  }
+
+  #ardoise-rslides {
+    height: 680px;
+  }
+
   #events-rslides {
     margin: 8% auto 2%;
   }
@@ -805,10 +771,6 @@ footer {
     clear: both;
   }
 
-  .pt-trig-top {
-    font-size: 2rem;
-  }
-
   .bottom-btn {
     width: 100%;
     text-align: center;
@@ -822,14 +784,6 @@ footer {
     margin-bottom: 0;
     padding: 0;
     color: #fff;
-  }
-
-  #contact {
-    height: 540px;
-  }
-
-  #contact .map-phone {
-    margin-top: 0;
   }
 
 }
@@ -850,14 +804,6 @@ footer {
 
   .navbar-inner {
     border-radius: 0;
-  }
-
-  .navbar-inner .center {
-    margin: 0 14%;
-  }
-
-  .navbav .nav li {
-    line-height: 0.6;
   }
 
   .navbar .nav > li > a.logo {
@@ -892,13 +838,16 @@ footer {
 
   /* #ARDOISE --------------------------------------------------------------- */
 
-  #ardoise h2 {
-    margin-bottom: 40px;
+  #ardoise {
+    height: 900px;
   }
 
-  #pt-main {
-    max-width: 640px;
-    margin: 40px auto 0;
+  #ardoise-rslides {  
+    height: 580px;
+  }
+
+  #ardoise h2 {
+    margin-bottom: 40px;
   }
 
   .carte li {
@@ -1140,7 +1089,6 @@ footer {
 }
 
 @media (min-width: 1200px) {
-
   .rslides1_nav {
     margin-top: -200px;
   }
@@ -1148,25 +1096,9 @@ footer {
   .rslides2_nav {
     margin-top: -200px;
   }
-
-  #events p.caption {
-    width: 100%;
-    position: absolute;
-    display: block;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 15px;
-    text-align: center;
-    background: #000;
-    background: rgba(0,0,0, .8);
-    color: #fff;
-  }
-
 }
 
 @media (min-width: 1600px) {
-
   #infos {
     padding-left: 10%;
     width: 40%;
@@ -1176,7 +1108,6 @@ footer {
     padding-right: 10%;
     width: 40%;
   }
-
 }
 
 @media print {
@@ -1212,10 +1143,6 @@ footer {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
-  thead {
-    display: table-header-group;
-  }
-  tr,
   img {
     page-break-inside: avoid;
   }
