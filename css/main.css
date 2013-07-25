@@ -966,8 +966,8 @@ footer {
   #ardoise h2 span,
   #events h2 span,
   #map h2 span {
-    padding: 0 90px;
-    top: -14px;
+    padding: 12px 90px;
+    top: -12px;
   }
 
   #presentation-rslides {
