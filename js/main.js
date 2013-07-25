@@ -14,9 +14,15 @@ $(document).ready(function(){
       href = $(this).attr('href');
     if(size < 768)
       minus = 80;
-     $('html, body').animate( {
-        scrollTop: $(href).offset().top - minus
-     }, 1200);    
+    $('html, body').animate( {
+      scrollTop: $(href).offset().top - minus
+    }, 1200);    
+  });
+
+  $('.btn').on('click', function() {
+    $('html, body').animate( {
+      scrollTop: $('#move').offset().top - 60
+    }, 800); 
   });
 
   /**
