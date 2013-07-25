@@ -381,24 +381,24 @@ h1 {
   float: right;
 }
 
-.pt-trig-bottom {
-  margin: 40px auto;
-}
-
 #move {
-  margin-bottom: 40px;
+  margin: 40px auto 40px;
   font-size: 1.7rem;
   color: #fff;
   text-align: center;
 }
 
+.bottom-btn {
+  margin: 40px auto;
+}
+
 /*TODO rename class ======================================= */
 
-.pt-trig-bottom {
+.bottom-btn {
   width: 300px;
 }
 
-.pt-touch-button {
+.btn {
   display: inline-block;
   margin: 20px auto 0;
   padding: 2px 20px 6px;
@@ -416,8 +416,8 @@ h1 {
           box-shadow:  1px 1px 10px 1px rgba(50, 0, 0, 0.8);
 }
 
-.pt-touch-button:hover,
-.pt-touch-button:active {
+.btn:hover,
+.btn:active {
   color: #960018;
   font-weight: bold;
   -webkit-box-shadow: inset 1px 1px 3px 1px rgba(50, 0, 0, 0.8);
@@ -809,12 +809,12 @@ footer {
     font-size: 2rem;
   }
 
-  .pt-trig-bottom {
+  .bottom-btn {
     width: 100%;
     text-align: center;
   }
 
-  .pt-touch-button {
+  .btn {
     margin: 0 10px 20px 10px;
   }
 
@@ -862,6 +862,22 @@ footer {
 
   .navbar .nav > li > a.logo {
     padding: 11px 10px 0 10px;
+  }
+
+  #presentation h2,
+  #infos h2,
+  #ardoise h2,
+  #events h2,
+  #map h2 {
+    font-size: 1.4rem;
+  }
+
+  #presentation h2 span,
+  #ardoise h2 span,
+  #events h2 span,
+  #infos h2 span,
+  #map h2 span {
+    padding: 0 40px;
   }
 
   /* #INTRO ----------------------------------------------------------------- */

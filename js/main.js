@@ -47,7 +47,7 @@ $(document).ready(function(){
   });
 
   // Switch du text titre/btn ardoise
-  $('.pt-trig-bottom a').on('click', function () {
+  $('.bottom-btn a').on('click', function () {
     var $oldTitre = $('#move'),
       $this = $(this);
 
