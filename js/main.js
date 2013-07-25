@@ -1,9 +1,14 @@
 $(document).ready(function(){
 
+  // Collapse nav menu on click
+  $('.nav li a').on('click', function() {
+    $('.collapse').collapse('hide');
+  });
+
   /**
    * Smooth Scroll
    */  
-  $('.nav li a').click(function() {
+  $('.nav li a').on('click', function() {
     var size = $(document).width(),
       minus = 100,
       href = $(this).attr('href');
