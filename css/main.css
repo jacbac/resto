@@ -1049,8 +1049,10 @@ footer {
 
   #infos a.tel {
     display: block;
+    width: 176px;
     font-size: 1.6rem;
     padding-bottom: 20px;
+    margin: 0 auto;
   }
 
   .socials {
