@@ -18,7 +18,7 @@ $(document).ready(function(){
     timeout: 10000,
     speed: 800,
     nav: true,
-    maxwidth: '600'
+    maxwidth: '750'
   });
 
   $('#ardoise-rslides .rslides').responsiveSlides({
@@ -32,8 +32,8 @@ $(document).ready(function(){
     auto: false,
     timeout: 5000,
     speed: 500,
-    nav: true,
-    maxwidth: '600',
+    nav: false,
+    maxwidth: '750',
     before: function(){
       var num = $('.rslides2_on').attr('id').slice(-1); // image d'origine
       var i = parseInt(num)+1;
