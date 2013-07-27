@@ -66,12 +66,16 @@ body {
 a {
   color: #eee;
   text-decoration: none;
+  -webkit-transition: color linear .4s;
+     -moz-transition: color linear .4s;
+       -o-transition: color linear .4s;
+          transition: color linear .4s;
 }
 
 a:hover,
 a:focus {
   outline: 0;
-  color: #eee;
+  color: #fff;
 }
 
 a:focus {
@@ -269,6 +273,8 @@ h1 {
 .presentation-text h3 {
   width: 80%;
   margin: 0 auto 20px;
+  font-weight: 700;
+  font-size: 1.3rem;
   text-align: center;
 }
 
@@ -453,7 +459,7 @@ h1 {
 #infos {
   background: #960018 url(/img/checkered_pattern.png) repeat;
   color: #fff;
-  height: 580px;
+  height: 640px;
 }
 
 #infos h2 {
@@ -482,6 +488,15 @@ h1 {
 #info {
   width: 90%;
   margin: 40px auto 60px;
+}
+
+#info span.social-title {
+  display: block;
+  width: 80%;
+  margin: 30px auto 0;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.2;
 }
 
 #info ul li {
@@ -514,19 +529,41 @@ h1 {
 }
 
 .calls a.email {
-  text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid #eee;
+  -webkit-transition: border-bottom linear .4s;
+     -moz-transition: border-bottom linear .4s;
+       -o-transition: border-bottom linear .4s;
+          transition: border-bottom linear .4s;
+}
+
+.calls a.email:hover,
+.calls a.email:focus {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #fff;
 }
 
 .socials {
   text-align: center;
-  margin: 40px 0 0;
+  margin: 20px 0 0;
 }
 
 .socials li {
   display: inline-block;
   margin: 0 10px;
+}
+
+.social img {
+  opacity: 0.8;
+  -webkit-transition: opacity linear .4s;
+     -moz-transition: opacity linear .4s;
+       -o-transition: opacity linear .4s;
+          transition: opacity linear .4s;
+}
+
+.social img:hover,
+.social img:focus {
+  opacity: 1;
 }
 
 .hours {
@@ -599,10 +636,18 @@ footer {
 }
 
 #signature a {
-  color: #eee;
-  text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid #eee;
+  -webkit-transition: border-bottom linear .4s;
+     -moz-transition: border-bottom linear .4s;
+       -o-transition: border-bottom linear .4s;
+          transition: border-bottom linear .4s;
+}
+
+#signature a:hover,
+#signature a:focus {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #fff;
 }
 
 /* Slider -------------------------------------------------- */
@@ -698,6 +743,10 @@ footer {
   #events-rslides {
     position: relative;
     width: 80%;
+  }
+
+  .presentation-text h3 {
+    width: 100%;
   }
 
   #presentation-rslides {
@@ -1021,7 +1070,7 @@ footer {
   }
 
   .socials {
-    margin: 80px 0 0;
+    margin: 20px 0 0;
   }
 
   .access {
