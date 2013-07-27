@@ -38,7 +38,7 @@ $(document).ready(function(){
     timeout: 10000,
     speed: 800,
     nav: true,
-    maxwidth: '750'
+    maxwidth: '800'
   });
 
   $('#ardoise-rslides .rslides').responsiveSlides({
@@ -56,7 +56,7 @@ $(document).ready(function(){
     timeout: 5000,
     speed: 500,
     nav: false,
-    maxwidth: '750',
+    maxwidth: '800',
     before: function(){
       var num = $('.rslides2_on').attr('id').slice(-1); // image d'origine
       var i = parseInt(num)+1;
@@ -108,20 +108,25 @@ $(document).ready(function(){
   function initialize() {
     var mapOptions = {
       zoom: 13,
+      panControl: false,
       center: new google.maps.LatLng(47.216303,-1.556454),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
 
-    map = new google.maps.Map(document.getElementById('big-map'),
-        mapOptions);
+    map = new google.maps.Map(document.getElementById('big-map'), mapOptions);
 
     var marker = new google.maps.Marker({
         position: new google.maps.LatLng(47.220486,-1.562864),
         map: map,
         animation: google.maps.Animation.DROP,
-        title: 'Restaurant Pierrot Gourmet'
+        title: 'Restaurant Pierrot Gourmet - Cliquer pour zoomer'
     });
-    google.maps.event.addListener(marker, 'click', toggleBounce);
+
+    // google.maps.event.addListener(marker, 'click', toggleBounce);
+    google.maps.event.addListener(marker, 'click', function() {
+      map.setZoom(16);
+      map.setCenter(marker.getPosition());
+    });
   }
 
   function toggleBounce() {
