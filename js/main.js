@@ -42,14 +42,33 @@ $(document).ready(function(){
   });
 
   $('#ardoise-rslides .rslides').responsiveSlides({
-    auto: true,
+    auto: false,
     timeout: 10000,
     speed: 800,
+    pager: true,
     maxwidth: '800',
     before: function(){
-
+      var $actualBtn = $('li.rslides_here'); 
+      $actualBtn.hide();
+      switch ($actualBtn.text()) {
+        case 'Voir l\'ardoise du jour':
+          $('li.rslides2_s2, li.rslides2_s3').show();
+          break;
+        case 'Voir l\'ardoise du mois':
+          $('li.rslides2_s1, li.rslides2_s3').show();
+          break;
+        case 'Voir nos vins du moment':
+          $('li.rslides2_s1, li.rslides2_s2').show();
+          break;
+      }
     }
   });
+
+  // Switch du text slide-btn
+  $('li.rslides_here').hide();
+  $('a.rslides2_s1').text('Voir l\'ardoise du jour');  //onload hide first
+  $('a.rslides2_s2').text('Voir l\'ardoise du mois');
+  $('a.rslides2_s3').text('Voir nos vins du moment');
 
   $('#events-rslides .rslides').responsiveSlides({
     auto: false,
@@ -67,38 +86,6 @@ $(document).ready(function(){
         $('.events-text .para-last').empty().append(data[i].paragraphe[1].text);
       });
     }
-  });
-
-  // Switch du text titre/btn ardoise
-  $('.bottom-btn a').on('click', function () {
-    var $oldTitre = $('#move'),
-      $this = $(this);
-
-    switch(this.innerHTML) {
-      case 'Voir notre menu du moment':
-        updateBtn($oldTitre.text(), $this);
-        $oldTitre.text('Notre menu du moment');
-        break;
-      case 'Voir nos vins du moment':
-        updateBtn($oldTitre.text(), $this);
-        $oldTitre.text('Nos vins du moment');
-        break;
-      case 'Voir notre carte du mois':
-        updateBtn($oldTitre.text(), $this);
-        $oldTitre.text('Notre carte du mois');
-        break;
-    }
-
-    function updateBtn(oldTitre, btn) {
-      if(oldTitre === 'Nos vins du moment') {
-        btn.text('Voir nos vins du moment');
-      } else if(oldTitre === 'Notre menu du moment') {
-        btn.text('Voir notre menu du moment');
-      } else {
-        btn.text('Voir notre carte du mois');
-      }
-    }
-    
   });
 
   /**
