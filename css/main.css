@@ -345,55 +345,14 @@ h1 {
   margin: 0 auto;
 }
 
-.carte {
-  margin-bottom: 36px;
-  padding: 20px;
-  color: #fff;
-}
-
-.slide1 {
-  margin-top: 100px;
-}
-
-.slide2 {
-  margin-top: 20px;
-}
-
-.carte h3 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1.6;
-  text-align: center;
-}
-
-.carte ul {
-  padding: 14px 0 14px;
-  text-align: center;
-  font-size: 1.2rem;
-}
-
-.carte ul.wine {
-  text-align:left;
-}
-
-.carte li {
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.carte li span {
-  float: right;
-}
-
-#move {
+.slide-title {
   margin: 40px auto 40px;
   font-size: 1.7rem;
   color: #fff;
   text-align: center;
 }
 
-.bottom-btn {
+.slide-btn {
   width: 300px;
   margin: 40px auto;
 }
@@ -423,6 +382,47 @@ h1 {
   -webkit-box-shadow: inset 1px 1px 3px 1px rgba(50, 0, 0, 0.8);
      -moz-box-shadow: inset 1px 1px 3px 1px rgba(50, 0, 0, 0.8);
           box-shadow: inset 1px 1px 3px 1px rgba(50, 0, 0, 0.8);
+}
+
+.slide1 {
+  margin-top: 100px;
+}
+
+.slide2 {
+  margin-top: 20px;
+}
+
+.carte {
+  margin-bottom: 36px;
+  padding: 20px;
+  color: #fff;
+}
+
+.carte h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.carte ul {
+  padding: 14px 0 14px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.carte ul.wine {
+  text-align:left;
+}
+
+.carte li {
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.carte li span {
+  float: right;
 }
 
 /* EVENTS ------------------------------------------------------------------- */
@@ -809,7 +809,7 @@ footer {
     clear: both;
   }
 
-  .bottom-btn {
+  .slide-btn {
     width: 100%;
     text-align: center;
   }
