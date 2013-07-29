@@ -353,9 +353,8 @@ h1 {
   text-align: center;
 }
 
-.rslides_tabs {
-  width: 300px;
-  margin: 40px auto;
+.rslides2_tabs {
+  width: 100%;
 }
 
 /*TODO*/
@@ -733,6 +732,12 @@ footer {
   right: 0;
 }
 
+.rslides2_tabs li {
+  display: inline;
+  margin: 0 10px 0;
+}
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -770,6 +775,10 @@ footer {
 
   #ardoise-rslides {
     height: 680px;
+  }
+
+  .rslides2_tabs {
+    width: 320px;
   }
 
   #events-rslides {
@@ -893,6 +902,10 @@ footer {
 
   .carte li {
     margin-bottom: 12px;
+  }
+
+  .rslides2_tabs {
+    width: 690px;
   }
 
   /* #EVENTS -----------------------------------------------------------------*/
