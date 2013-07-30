@@ -201,6 +201,7 @@ img {
 
 .collapse {
   position: relative;
+  clear: both; /* firefox hack */
   width: 100%;
   height: 0;
   overflow: hidden;
@@ -326,7 +327,7 @@ h1 {
   margin: 0;
   font-size: 1.2rem;
   line-height: 0.6;
-  color: #fff;  
+  color: #fff;
   text-align: center;
   text-transform: uppercase;
 }
@@ -352,9 +353,8 @@ h1 {
   text-align: center;
 }
 
-.rslides_tabs {
-  width: 300px;
-  margin: 40px auto;
+.rslides2_tabs {
+  width: 100%;
 }
 
 /*TODO*/
@@ -732,6 +732,12 @@ footer {
   right: 0;
 }
 
+.rslides2_tabs li {
+  display: inline;
+  margin: 0 10px 0;
+}
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -769,6 +775,10 @@ footer {
 
   #ardoise-rslides {
     height: 680px;
+  }
+
+  .rslides2_tabs {
+    width: 320px;
   }
 
   #events-rslides {
@@ -882,7 +892,7 @@ footer {
     height: 940px;
   }
 
-  #ardoise-rslides {  
+  #ardoise-rslides {
     height: 640px;
   }
 
@@ -892,6 +902,10 @@ footer {
 
   .carte li {
     margin-bottom: 12px;
+  }
+
+  .rslides2_tabs {
+    width: 690px;
   }
 
   /* #EVENTS -----------------------------------------------------------------*/
